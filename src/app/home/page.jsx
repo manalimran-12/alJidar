@@ -1,8 +1,9 @@
 import Image from 'next/image';
-import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+  import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { MdEmail, MdPhone } from 'react-icons/md';
 import logo from "../../public/logo.png";
 import homeBackground from "../../public/home1.png";
+import ContactSection from '@/Components/ContactForm';
 
 
 export default function HomePage() {
@@ -56,6 +57,7 @@ export default function HomePage() {
           <Image src="/steel-products.jpg" alt="Steel Products" width={500} height={300} className="rounded-lg" />
         </div>
       </section>
+      <ContactSection />
     </div>
   );
 }
