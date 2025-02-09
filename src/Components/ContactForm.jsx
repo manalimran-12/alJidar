@@ -24,11 +24,11 @@ const ContactSection = () => {
                     </div>
                     <form className="space-y-4">
                         <div className="flex flex-col md:flex-row gap-4">
-                            <input type="text" placeholder={data.form.firstNamePlaceholder} className="w-full md:w-1/2 p-3 bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" />
-                            <input type="text" placeholder={data.form.lastNamePlaceholder} className="w-full md:w-1/2 p-3 bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+                            <input type="text" placeholder={data.form.firstNamePlaceholder} className="w-full md:w-1/2 p-3 bg-[#424242] rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+                            <input type="text" placeholder={data.form.lastNamePlaceholder} className="w-full md:w-1/2 p-3 bg-[#424242] rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" />
                         </div>
-                        <input type="email" placeholder={data.form.emailPlaceholder} className="w-full p-3 bg-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" />
-                        <textarea placeholder={data.form.messagePlaceholder} className="w-full p-3 bg-gray-700 rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+                        <input type="email" placeholder={data.form.emailPlaceholder} className="w-full p-3 bg-[#424242] rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+                        <textarea placeholder={data.form.messagePlaceholder} className="w-full p-3 bg-[#424242] rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
                         <button className="w-full bg-yellow-500 text-gray-900 font-semibold py-3 rounded-lg hover:bg-yellow-600 transition">{data.form.buttonText}</button>
                     </form>
                 </div>
