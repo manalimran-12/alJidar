@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { MdEmail, MdPhone } from 'react-icons/md';
@@ -39,7 +40,10 @@ export default function HeaderSection() {
           <h1 className="text-yellow-500 text-4xl md:text-6xl font-bold mt-4">{data.header.headerName}</h1>
 
           <div className="right-9 bottom-10 mt-10">
-            <button className="w-14 h-14 bg-gray-700 border-2 border-yellow-500 rounded-full flex items-center justify-center text-yellow-500 text-xl hover:bg-gray-600 transition-colors">
+            <button
+              className="w-14 h-14 bg-gray-700 border-2 border-yellow-500 rounded-full flex items-center justify-center text-yellow-500 text-xl hover:bg-gray-600 transition-colors"
+              onClick={() => document.getElementById("products")?.scrollIntoView({ behavior: "smooth" })}
+            >
               ↓
             </button>
           </div>
