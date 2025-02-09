@@ -17,14 +17,15 @@ const data = {
       "<span class='text-yellow-500'>500 Mt. Per Month.</span>",
 
     phoneHeader: "+966 59 0283 005",
-    subtitle:"GYPSUM/DRYWALL STEEL PRODUCTS",
+    subtitle: "GYPSUM/DRYWALL STEEL PRODUCTS",
     mainHeading1: " DEDICATED TO SHAPING THE FUTURE THROUGH",
     headerName: "AL JIDAR STEEL",
   },
-  trust :{
+  trust: {
     heading1: "TRUSTED, EXPERIENCED,",
     heading2: "QUALITY-DRIVEN",
   },
+
   footer: {
     companyName: "ALJIDAR",
     companyDescription:
@@ -37,6 +38,23 @@ const data = {
     followUs: "Follow Us",
     socialIcon: "🔗",
   },
+  Qualtity: {
+    Title1: "WHERE QUALITY MEETS",
+    Title2: "SUSTAINABILITY",
+    Title3: "AND INNOVATION",
+    para1: "At Al Jidar Steel Manufacturing, we believe that true excellence lies at the" +
+      "intersection of quality, sustainability, and innovation.Our commitment to" +
+      "crafting superior gypsum and drywall accessories goes beyond meeting" +
+      "industry standards — it's about pioneering eco-friendly practices," +
+      "embracing cutting- edge technology, and delivering solutions that stand" +
+      "the test of time.",
+    para2: " By integrating sustainability into every step of our production process, we" +
+      "aim to reduce our environmental impact while ensuring unmatched" +
+      "durability and reliability in our products.",
+    para3: "Innovation drives our journey," +
+      "empowering us to create a future where quality and responsibility" +
+      "coexist seamlessly.",
+  }
 };
 
 export default data;
