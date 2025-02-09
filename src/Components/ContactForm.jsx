@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import data from "../public/data.json"
+import data from "../public/data.js"
 import rolls from "../public/rolls1.png"
 import { FaEnvelope, FaFacebookF, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 
