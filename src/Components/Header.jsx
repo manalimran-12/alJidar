@@ -5,11 +5,12 @@ import { MdEmail, MdPhone } from 'react-icons/md';
 import data from "../public/data.js";
 import logo from "../public/logo.png";
 import homeBackground from "../public/home1.png";
+import { useRouter } from "next/navigation";
 
 export default function HeaderSection() {
+  const router = useRouter();
   return (
     <div className="w-full bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${homeBackground.src})` }}>
-      {/* Header */}
       <header className="flex flex-col p-4 lg:px-12 bg-no-repeat bg-cover bg-center relative">
         <div className="flex justify-end items-center gap-4 text-white text-sm">
           <MdPhone className="text-yellow-500" />
@@ -20,18 +21,29 @@ export default function HeaderSection() {
           <FaLinkedinIn className="cursor-pointer" />
         </div>
         <div className="flex justify-between items-center mt-4">
-          <Image src={logo} alt="Logo" width={180} height={60} />
+          <Image
+            src={logo}
+            alt="Logo"
+            width={180}
+            height={60}
+            className="cursor-pointer"
+            onClick={() => router.push("/home")}
+          />
+
           <div className="flex items-center gap-6">
             <button className="text-white font-medium">Our Products</button>
-            <button className="bg-yellow-500 text-black px-6 py-2 rounded">Contact Us</button>
+            <button
+              className="bg-yellow-500 text-black px-6 py-2 rounded hover:bg-yellow-600 transition-colors"
+              onClick={() => router.push("/contact")}
+            >
+              Contact Us
+            </button>
           </div>
         </div>
       </header>
-
-      {/* Hero Section */}
       <section className="relative flex justify-end items-center px-4 lg:px-32 py-20 text-white">
         <div className="max-w-4xl flex flex-col items-end text-right p-8 rounded-lg">
-          <button className="text-yellow-400 px-4 py-1 text-xs font-bold rounded bg-gray-700">
+          <button className="text-yellow-400 px-4 py-1 text-xs font-bold rounded bg-[#323232]">
             {data.header.subtitle}
           </button>
           <h1 className="text-4xl md:text-6xl font-bold mt-4">

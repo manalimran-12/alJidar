@@ -5,7 +5,7 @@ import { FaEnvelope, FaFacebookF, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt, FaTw
 
 const ContactSection = () => {
     return (
-        <div className="bg-[#323232] text-white">
+        <div className="bg-[#323232] text-white" id='contact'>
             <div className="flex flex-col md:flex-row items-center justify-between p-8 md:p-16">
                 <div className="w-full md:w-1/2 mb-8 md:mb-0">
                     <Image
@@ -18,7 +18,7 @@ const ContactSection = () => {
                 </div>
                 <div className="w-full md:w-1/2 bg-[#323232] p-8 rounded-lg  ">
                     <div className="text-left mb-10">
-                        <button className="bg-black text-yellow-400 px-4 py-2 rounded-md text-sm">CONTACT US/BOOK AN APPOINTMENT</button>
+                        <button className="bg-[#252525] text-yellow-400 px-4 py-2 rounded-md text-sm">CONTACT US/BOOK AN APPOINTMENT</button>
                         <h2 className="text-2xl md:text-4xl font-bold text-white mt-4">{data.title}</h2>
                         <h2 className="text-2xl md:text-4xl font-bold text-yellow-400">CONTACT US</h2>
                     </div>
@@ -33,7 +33,7 @@ const ContactSection = () => {
                     </form>
                 </div>
             </div>
-            <div className="bg-gray-800 p-8 mt-8 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-300">
+            <div className="bg-[#252525] p-8 mt-8 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-300">
                 <div className="text-left md:w-1/3">
                     <h2 className="text-xl font-bold text-yellow-400">{data.footer.companyName}</h2>
                     <p className="mt-2">{data.footer.companyDescription}</p>
