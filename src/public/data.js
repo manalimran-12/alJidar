@@ -55,11 +55,110 @@ const data = {
       "empowering us to create a future where quality and responsibility" +
       "coexist seamlessly.",
   },
-  
+
   Contact: {
-    subtitle: "CONNECT WITH US",
-    mainHeading1: "YOUR <span class='text-yellow-500'>SUPPORT<br>TEAM</span> AWAITS"
+    subtitle1: "CONNECT WITH US",
+    mainHeading1: "YOUR <span class='text-yellow-500'>SUPPORT<br>TEAM</span> AWAITS",
+    subtitle2: "BUILT TO LAST",
+    mainHeading2: "ENGINEERED FOR <span class='text-yellow-500'>PRECISION AND<br>PREFORMANCE</span> AWAITS",
   },
+
+  qualitySection: {
+    background: "#323232",
+    textColor: "white",
+    sections: [
+      {
+        id: "raw-material",
+        title: "RAW MATERIAL",
+        content:
+          "We source premium raw materials to ensure durability and performance. Our materials meet high industry standards, offering reliability and sustainability for top-notch gypsum and drywall solutions.",
+      },
+      {
+        id: "quality",
+        title: "QUALITY",
+        content:
+          "Quality is at the core of our work. With strict controls and advanced technology, we deliver durable, precise, and reliable products that exceed expectations.",
+      },
+      {
+        id: "production",
+        title: "PRODUCTION",
+        content:
+          "Our modern facilities combine innovation and efficiency to produce high-performance gypsum and drywall accessories. We focus on sustainability, functionality, and ease of installation.",
+      },
+    ],
+  },
+  qualitySectionProduct: {
+    background: "#323232",
+    textColor: "white",
+    heading: {
+
+      title: "Why FOR <span class='text-yellow-500'>AL Jidar Steel<br></span> Stands Out",
+    },
+    sections: [
+      {
+        id: "Innovative",
+        title: "Innovative Facilities & Expertise:",
+        content:
+          "Advanced production units powered by cutting-edge technology and over a decade of industry experience.",
+      },
+      {
+        id: "Tailored",
+        title: "Tailored & Sustainable Solutions",
+        content:
+          "Customized steel profile products designed to meet unique project needs while prioritizing eco-friendly practices.",
+      },
+      {
+        id: "Leadership",
+        title: "Local Leadership",
+        content:
+          "A trusted name in the region, delivering superior steel solutions tailored to local market needs with unmatched reliability",
+      },
+    ],
+  },
+  product1: {
+     
+    category: "GYPSUM/DRYWALL STEEL PRODUCTS",
+    title: "STUD",
+    description: "Studs are commonly used for partition as a vertical framing, keeping a friction between the parallel tracks on top and bottom.",
+    availability: "Studs are available in 0.35 mm – 0.90 mm and upon request other thickness will be provided.",
+    specifications: {
+      headers: ["Thickness (mm)", "Width (mm)", "Length (mm)", "Flang (mm)", "Package (pcs)"],
+      values: ["0.35, 0.40, 0.45", "39/46/50/61/68/70/73/90/98/123/148", "3000", "34 and 36", "250/pallet"]
+    }
+  },
+  product3: {
+     
+    category: "GYPSUM/DRYWALL STEEL PRODUCTS",
+    title: "C Channel",
+    description: "It is also known as Carrying Channel or C Channel and is used for ceiling framework. Main Channel is a prominent channel in a conventional metal framework and it is produced from cold roll formed steel. Main channel is the supporting component for the furring channel as it hangs from the roof with furring channel right beneath it",
+    availability: "Studs are available in 0.35 mm – 0.90 mm and upon request other thickness will be provided.",
+    specifications: {
+      headers: ["Thickness (mm)", "Width (mm)", "Length (mm)", "Flang (mm)", "Package (pcs)"],
+      values: ["0.35, 0.40, 0.45", "39/46/50/61/68/70/73/90/98/123/148", "3000", "34 and 36", "250/pallet"]
+    }
+  },
+  product2: {
+     
+    category: "GYPSUM/DRYWALL STEEL PRODUCTS",
+    title: "Furring Channel (Omega)",
+    description: "It is secondary to the Main Channel as it is fixed to it. Once this process is over, the gypsum board gets screwed to conceal and finish the ceiling.",
+    availability: "FSP Furring Channel is a hat-shaped corrosion -  resistant framing component used to fur out masonry walls and ceiling assemblies. In concrete wall applications, furring channel is installed vertically to the wall surface using concrete nails or power-driven fasteners.",
+    specifications: {
+      headers: ["Thickness (mm)", "Width (mm)", "Length (mm)", "Flang (mm)", "Package (pcs)"],
+      values: ["0.35, 0.40, 0.45", "39/46/50/61/68/70/73/90/98/123/148", "3000", "34 and 36", "250/pallet"]
+    }
+  },
+  product4: {
+     
+    category: "GYPSUM/DRYWALL STEEL PRODUCTS",
+    title: "Runner",
+    description: "Ceiling Panel U-Trim is pre-painted in white and it is used to create the perfect professional finished edge on the new ceiling. This clever U-trim neatly slots on around the entire ceiling to create a stunning flawless look.",
+    availability: "FSP Furring Channel is a hat-shaped corrosion -  resistant framing component used to fur out masonry walls and ceiling assemblies. In concrete wall applications, furring channel is installed vertically to the wall surface using concrete nails or power-driven fasteners.",
+    specifications: {
+      headers: ["Thickness (mm)", "Width (mm)", "Length (mm)", "Flang (mm)", "Package (pcs)"],
+      values: ["0.35, 0.40, 0.45", "39/46/50/61/68/70/73/90/98/123/148", "3000", "34 and 36", "250/pallet"]
+    }
+  }
 };
 
 export default data;

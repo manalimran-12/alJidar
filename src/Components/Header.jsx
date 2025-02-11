@@ -31,7 +31,12 @@ export default function HeaderSection() {
           />
 
           <div className="flex items-center gap-6">
-            <button className="text-white font-medium">Our Products</button>
+            <button
+              className="text-white font-medium hover:text-yellow-500 transition-colors"
+              onClick={() => router.push("/product")}
+            >
+              Our Products
+            </button>
             <button
               className="bg-yellow-500 text-black px-6 py-2 rounded hover:bg-yellow-600 transition-colors"
               onClick={() => router.push("/contact")}
