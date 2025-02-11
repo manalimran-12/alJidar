@@ -54,7 +54,12 @@ const data = {
     para3: "Innovation drives our journey," +
       "empowering us to create a future where quality and responsibility" +
       "coexist seamlessly.",
-  }
+  },
+  
+  Contact: {
+    subtitle: "CONNECT WITH US",
+    mainHeading1: "YOUR <span class='text-yellow-500'>SUPPORT<br>TEAM</span> AWAITS"
+  },
 };
 
 export default data;

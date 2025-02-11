@@ -24,9 +24,9 @@ export default function TrustSection() {
           {data.trust.heading2}
         </h2>
         {/* Animated Arrow Button */}
-        <button className="absolute bottom-6 right-6 bg-white rounded-full p-3 hover:bg-opacity-90 transition-all group">
+        <button className="absolute bottom-6 right-6 bg-white rounded-full p-3 hover:bg-opacity-90 transition-all group shadow-lg">
           <svg
-            className="w-5 h-5 transform rotate-45 text-yellow-500 transition-transform duration-300 group-hover:rotate-90"
+            className="w-5 h-5 transform rotate-[315deg] text-yellow-500 transition-transform duration-300 group-hover:rotate-90"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
