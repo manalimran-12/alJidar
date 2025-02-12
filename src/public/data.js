@@ -116,9 +116,10 @@ const data = {
     ],
   },
   product1: {
-     
+
     category: "GYPSUM/DRYWALL STEEL PRODUCTS",
     title: "STUD",
+    id: "studd",
     description: "Studs are commonly used for partition as a vertical framing, keeping a friction between the parallel tracks on top and bottom.",
     availability: "Studs are available in 0.35 mm – 0.90 mm and upon request other thickness will be provided.",
     specifications: {
@@ -127,9 +128,10 @@ const data = {
     }
   },
   product3: {
-     
+
     category: "GYPSUM/DRYWALL STEEL PRODUCTS",
     title: "C Channel",
+    id: "Channel",
     description: "It is also known as Carrying Channel or C Channel and is used for ceiling framework. Main Channel is a prominent channel in a conventional metal framework and it is produced from cold roll formed steel. Main channel is the supporting component for the furring channel as it hangs from the roof with furring channel right beneath it",
     availability: "Studs are available in 0.35 mm – 0.90 mm and upon request other thickness will be provided.",
     specifications: {
@@ -138,9 +140,10 @@ const data = {
     }
   },
   product2: {
-     
+
     category: "GYPSUM/DRYWALL STEEL PRODUCTS",
     title: "Furring Channel (Omega)",
+    id: "Furring",
     description: "It is secondary to the Main Channel as it is fixed to it. Once this process is over, the gypsum board gets screwed to conceal and finish the ceiling.",
     availability: "FSP Furring Channel is a hat-shaped corrosion -  resistant framing component used to fur out masonry walls and ceiling assemblies. In concrete wall applications, furring channel is installed vertically to the wall surface using concrete nails or power-driven fasteners.",
     specifications: {
@@ -149,16 +152,57 @@ const data = {
     }
   },
   product4: {
-     
+
     category: "GYPSUM/DRYWALL STEEL PRODUCTS",
     title: "Runner",
+    id: "runner",
     description: "Ceiling Panel U-Trim is pre-painted in white and it is used to create the perfect professional finished edge on the new ceiling. This clever U-trim neatly slots on around the entire ceiling to create a stunning flawless look.",
     availability: "FSP Furring Channel is a hat-shaped corrosion -  resistant framing component used to fur out masonry walls and ceiling assemblies. In concrete wall applications, furring channel is installed vertically to the wall surface using concrete nails or power-driven fasteners.",
     specifications: {
       headers: ["Thickness (mm)", "Width (mm)", "Length (mm)", "Flang (mm)", "Package (pcs)"],
       values: ["0.35, 0.40, 0.45", "39/46/50/61/68/70/73/90/98/123/148", "3000", "34 and 36", "250/pallet"]
     }
-  }
+  },
+
+  productDetails: {
+    id: "product-details",
+    category: "GYPSUM/DRYWALL STEEL PRODUCTS",
+    title: "Comprehensive Product Details",
+    image: "/public/product-details.png",
+    heading: " COMPREHENSIVE <span class='text-yellow-500'>PRODUCT DETAILS</span>",
+    "technicalSpecifications": [
+      { "parameter": "Zinc Coating", "detail": "Z60 – Z275 g/m2 both sides (Z60 GSM)" },
+      { "parameter": "Tensile Strength", "detail": "TS 350-360" },
+      { "parameter": "Yield Strength", "detail": "YP 290-298", "highlight": true },
+      { "parameter": "Substrate (Material)", "detail": "Galvanized Steel (GI)" },
+      { "parameter": "Elongation", "detail": "EL30" },
+      { "parameter": "Chemical Coating", "detail": "Chromated" },
+      { "parameter": "Substrate (Material)", "detail": "Galvanized Steel (GI)" },
+
+      { "parameter": "Hardness", "detail": "HRB 55-65" },
+
+      { "parameter": "Chemical Coating", "detail": "Chromated" }
+    ]
+  },
+
+  vision: {
+    title: "AL-JIDAR",
+    highlight: "VISION",
+    content: "To become the preferred name in steel profile manufacturing, known for innovation, efficiency, and contributing to <span class='text-white font-semibold'>Saudi Arabia’s Vision 2030.</span>"
+  },
+
+  mission: {
+    title: "AL-JIDAR",
+    highlight: "MISSION",
+    content: "To provide state-of-the-art steel solutions while fostering partnerships, promoting sustainability, and delivering superior value to clients and stakeholders."
+  },
+  p: {
+    p1: "At Al Jidar Steel Manufacturing, we prioritize efficient supply chain solutions to meet the unique demands of warehouses.Our products are designed to ensure strength, durability, and ease of installation, helping businesses optimize storage and logistics.",
+     p2: "By leveraging advanced production techniques and a customer-centric approach, we guarantee timely delivery and consistent quality, making us a trusted partner for warehouse infrastructure."
+ ,heading:"COMPREHENSIVE STEEL SUPPLY SOLUTIONS FOR"
+    }
+
+
 };
 
 export default data;

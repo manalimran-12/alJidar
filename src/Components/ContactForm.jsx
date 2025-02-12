@@ -38,7 +38,7 @@ const ContactSection = () => {
                     <h2 className="text-xl font-bold text-yellow-400">{data.footer.companyName}</h2>
                     <p className="mt-2">{data.footer.companyDescription}</p>
                     <div className="mt-4 flex items-center">
-                        <input type="email" placeholder={data.footer.emailPlaceholder} className="p-2 bg-gray-700 rounded-l-lg focus:outline-none" />
+                        <input type="email" placeholder={data.footer.emailPlaceholder} className="p-2 bg-[#313131] rounded-l-lg focus:outline-none" />
                         <button className="bg-yellow-500 px-4 py-2 rounded-r-lg text-gray-900 font-semibold">{data.footer.subscribeButton}</button>
                     </div>
                 </div>

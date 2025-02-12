@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image";
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import studImg from "../public/stud.png";
 import furringImg from "../public/furring.png";
@@ -10,7 +9,15 @@ import wallAngleImg from "../public/wallangle.png";
 import data from "@/public/data";
 import qualtityBackground from "../public/qualityPage.png"
 
-const ProductCard = ({ title, description, image, isLarge = false, yellowBg = false }) => {
+const ProductCard = ({ title, description, image, isLarge = false, yellowBg = false, targetId }) => {
+  
+  const handleNavigation = () => {
+    const section = document.getElementById(targetId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div
       className={`relative overflow-hidden bg-white hover:bg-yellow-500 group transition-all duration-300 
@@ -22,12 +29,16 @@ const ProductCard = ({ title, description, image, isLarge = false, yellowBg = fa
             ${isLarge ? 'text-5xl' : 'text-3xl'}`}>
             {title}
           </h3>
-          {/* Updated max-width from 70% to 50% */}
+
           <p className="text-sm max-w-[50%] leading-relaxed text-black">{description}</p>
         </div>
 
+        {/* Dynamic Button */}
         <div className="absolute bottom-8 left-25">
-          <button className="bg-black group-hover:bg-white rounded-full p-3 transition-colors duration-300">
+          <button 
+            className="bg-black group-hover:bg-white rounded-full p-3 transition-colors duration-300"
+            onClick={handleNavigation}
+          >
             <svg
               className="w-5 h-5 transform rotate-[45deg] text-white group-hover:text-yellow-500 transition-all duration-300"
               fill="none"
@@ -56,6 +67,8 @@ const ProductCard = ({ title, description, image, isLarge = false, yellowBg = fa
     </div>
   );
 };
+ 
+
 
 const ProductAndQualitySection = () => {
   return (
@@ -70,6 +83,7 @@ const ProductAndQualitySection = () => {
                   description="are available in 0.35 mm – 0.90 mm and upon request other thickness will be provided"
                   image={studImg}
                   isLarge={true}
+                  targetId="STUD"
                 />
               </div>
               <div className="h-full">
@@ -78,6 +92,7 @@ const ProductAndQualitySection = () => {
                   description="are available in 0.35 mm – 0.90 mm and upon request other thickness will be provided"
                   image={furringImg}
                   isLarge={true}
+                  targetId="Channel"
                 />
               </div>
             </div>
@@ -86,16 +101,19 @@ const ProductAndQualitySection = () => {
                 title="C CHANNEL"
                 description="are available in 0.35 mm – 0.90 mm and upon request other thickness will be provided"
                 image={cChannelImg}
+                targetId="Furring"
               />
               <ProductCard
                 title="RUNNER"
                 description="are available in 0.35 mm – 0.90 mm and upon request other thickness will be provided"
                 image={runnerImg}
+                targetId="runner"
               />
               <ProductCard
                 title="WALL ANGLE"
                 description="are available in 0.35 mm – 0.90 mm and upon request other thickness will be provided"
                 image={wallAngleImg}
+                targetId="STUD"
               />
             </div>
           </div>
