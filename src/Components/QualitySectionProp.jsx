@@ -2,11 +2,11 @@
 
 import React, { useState } from "react";
 
-const QualitySectionProp = ({ heading, sections }) => {
+const QualitySectionProp = ({ heading, sections, bgColor, hover }) => {
     const [hoveredSection, setHoveredSection] = useState("quality");
 
     return (
-        <section className="bg-[#323232] text-white py-12 px-6 md:px-16 relative">
+        <section className={`bg-[${bgColor}] text-white py-12 px-6 md:px-16 relative`}>
 
             {heading &&
                 <div className="max-w-7xl mx-auto text-left mb-10">
@@ -22,7 +22,7 @@ const QualitySectionProp = ({ heading, sections }) => {
                         key={section.id}
                         onMouseEnter={() => setHoveredSection(section.id)}
                         className={`transition-all duration-300 px-6 py-6 ${hoveredSection === section.id
-                            ? "bg-[#252525] shadow-[0px_4px_20px_rgba(0,0,0,0.7)]"
+                            ? `bg-[${hover}] shadow-[0px_4px_20px_rgba(0,0,0,0.7)]`
                             : ""
                             }`}
                     >

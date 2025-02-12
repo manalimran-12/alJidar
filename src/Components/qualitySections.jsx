@@ -7,6 +7,8 @@ const QualitySection = () => {
 
   return (
     <QualitySectionProp
+      hover={"#252525"}
+      bgColor={"#323232"}
       sections={data.qualitySection.sections}
     />
   );
