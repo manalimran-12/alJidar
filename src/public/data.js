@@ -198,9 +198,10 @@ const data = {
   },
   p: {
     p1: "At Al Jidar Steel Manufacturing, we prioritize efficient supply chain solutions to meet the unique demands of warehouses.Our products are designed to ensure strength, durability, and ease of installation, helping businesses optimize storage and logistics.",
-     p2: "By leveraging advanced production techniques and a customer-centric approach, we guarantee timely delivery and consistent quality, making us a trusted partner for warehouse infrastructure."
- ,heading:"COMPREHENSIVE STEEL SUPPLY SOLUTIONS FOR"
-    }
+    p2: "By leveraging advanced production techniques and a customer-centric approach, we guarantee timely delivery and consistent quality, making us a trusted partner for warehouse infrastructure."
+    , heading: "COMPREHENSIVE STEEL SUPPLY SOLUTIONS FOR"
+    , contact: "Contact Us"
+  }
 
 
 };

@@ -3,12 +3,12 @@
 import React from "react";
 import Image from "next/image";
 
-const StudProduct = ({ product, image, reverse  }) => {
+const StudProduct = ({ product, image, reverse = false }) => {
     return (
-        <section id={product.id} className="bg-[#252525] text-white py-12 px-6 md:px-16 relative">
+        <section className="bg-[#252525] text-white py-12 px-6 md:px-16 relative">
             <div className={`max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center ${reverse ? 'md:grid-cols-2' : 'md:grid-cols-2 md:flex-row-reverse'}`}>
 
-                <div className={`text-right order-${reverse ? '2' : '1'}`}>
+                <div className={`text-left order-${reverse ? '2' : '1'}`}>
                     <button className="bg-[#323232] text-yellow-500 px-4 py-1 text-sm font-bold rounded">
                         {product.category}
                     </button>

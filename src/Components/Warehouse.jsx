@@ -6,10 +6,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import warehouse from "../public/warehouse.png";
 import warehouse2 from "../public/warehouse2.png";
 import data from "@/public/data";
+import { useRouter } from "next/navigation";
 
 const WarehouseSupplySection = () => {
   const [showSecondImage, setShowSecondImage] = useState(false);
-
+const router = useRouter()
   useEffect(() => {
     const interval = setInterval(() => {
       setShowSecondImage((prev) => !prev);
@@ -82,17 +83,18 @@ const WarehouseSupplySection = () => {
 
 
           <p className="text-gray-300 mt-4 leading-relaxed">
-           {data.p.p1}
+            {data.p.p1}
           </p>
           <p className="text-gray-300 mt-4 leading-relaxed">
-          {data.p.p2}
+            {data.p.p2}
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="mt-6 bg-yellow-500 text-black px-6 py-3 rounded font-bold hover:bg-yellow-600 transition-colors"
+            onClick={() => { router.push("/contact") }}
           >
-            Contact Us
+            {data.p.contact}
           </motion.button>
         </motion.div>
       </div>
