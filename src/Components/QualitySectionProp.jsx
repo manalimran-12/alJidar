@@ -3,12 +3,12 @@
 import React, { useState } from "react";
 import QualityBackground from "../public/bgQuality.png"; // Ensure the correct path
 
-const QualitySectionProp = ({ heading, sections, bgColor, hover }) => {
+const QualitySectionProp = ({ heading, sections, bgColor, hover, isProductPage = false }) => {
     const [hoveredSection, setHoveredSection] = useState("quality");
 
     return (
         <section
-            className={`relative text-white py-12 px-6 md:px-16 bg-no-repeat bg-cover bg-[${bgColor}] h-[45vh]`}
+            className={`relative text-white py-12 px-6 md:px-16 bg-no-repeat bg-cover bg-[${bgColor}] ${isProductPage ? "h-[50vh]" : "h-[40vh]"}`}
             style={{ backgroundImage: `url(${QualityBackground.src})` }}
         >
             <div className="relative max-w-7xl mx-auto z-10">

@@ -27,6 +27,7 @@ export default function Product() {
                 bgColor={"#323232"}
                 heading={data.qualitySectionProduct.heading}
                 sections={data.qualitySectionProduct.sections}
+                isProductPage={true}
             />
             <WarehouseSupplySection/>
             <ContactSection />
