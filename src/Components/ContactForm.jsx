@@ -33,7 +33,7 @@ const ContactSection = () => {
                     </form>
                 </div>
             </div>
-            <div className="bg-[#252525] p-8 mt-8 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-300">
+            {/* <div className="bg-[#252525] p-8 mt-8 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-300">
                 <div className="text-left md:w-1/3">
                     <h2 className="text-xl font-bold text-yellow-400">{data.footer.companyName}</h2>
                     <p className="mt-2">{data.footer.companyDescription}</p>
@@ -58,7 +58,7 @@ const ContactSection = () => {
                         <a href="#" className="text-2xl"><FaTwitter className="text-yellow-400" /></a>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

@@ -8,14 +8,13 @@ import runnerImg from "../public/runner.png";
 import wallAngleImg from "../public/wallangle.png";
 import data from "@/public/data";
 import qualtityBackground from "../public/qualityPage.png"
+import { useRouter } from "next/navigation";
 
 const ProductCard = ({ title, description, image, isLarge = false, yellowBg = false, targetId }) => {
-  
+
+  const router = useRouter();
   const handleNavigation = () => {
-    const section = document.getElementById(targetId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
+    router.push("/product");
   };
 
   return (
@@ -35,7 +34,7 @@ const ProductCard = ({ title, description, image, isLarge = false, yellowBg = fa
 
         {/* Dynamic Button */}
         <div className="absolute bottom-8 left-25">
-          <button 
+          <button
             className="bg-black group-hover:bg-white rounded-full p-3 transition-colors duration-300"
             onClick={handleNavigation}
           >
@@ -67,7 +66,7 @@ const ProductCard = ({ title, description, image, isLarge = false, yellowBg = fa
     </div>
   );
 };
- 
+
 
 
 const ProductAndQualitySection = () => {

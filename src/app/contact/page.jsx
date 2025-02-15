@@ -2,6 +2,7 @@ import ContactHeader from '../../Components/ContactHeader';
 import TrustSection from '@/Components/Trust1';
 import ContactSection from '@/Components/ContactForm';
 import ContactDetails from '@/Components/contactDetails';
+import Footer from '@/Components/footer';
 
 export default function ContactPage() {
   return (
@@ -10,6 +11,7 @@ export default function ContactPage() {
       <TrustSection />
       <ContactDetails />
       <ContactSection />
+      <Footer/>
     </div>
   );
 }

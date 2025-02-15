@@ -3,12 +3,13 @@
 import React from "react";
 import Image from "next/image";
 
-const StudProduct = ({ product, image, reverse  }) => {
+const StudProduct = ({ product, image, reverse = false }) => {
     return (
-        <section id={product.id} className="bg-[#252525] text-white py-12 px-6 md:px-16 relative">
-            <div className={`max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center ${reverse ? 'md:grid-cols-2' : 'md:grid-cols-2 md:flex-row-reverse'}`}>
+        <section className="bg-[#252525] text-white py-12 px-6 md:px-16 relative">
+            <div className={`max-w-7xl mx-auto flex flex-col md:flex-row ${reverse ? 'md:flex-row-reverse' : ''} gap-10 items-center`}>
 
-                <div className={`text-right order-${reverse ? '2' : '1'}`}>
+                {/* Left Side - Text */}
+                <div className="text-left flex-1">
                     <button className="bg-[#323232] text-yellow-500 px-4 py-1 text-sm font-bold rounded">
                         {product.category}
                     </button>
@@ -16,6 +17,7 @@ const StudProduct = ({ product, image, reverse  }) => {
                     <p className="text-sm md:text-base text-gray-300 mt-4">{product.description}</p>
                     <p className="text-sm md:text-lg font-semibold mt-4">{product.availability}</p>
 
+                    {/* Table Container */}
                     <div className="mt-6 bg-[#323232] p-4 rounded-lg overflow-x-auto">
                         <table className="w-full text-left text-gray-300">
                             <thead>
@@ -36,9 +38,11 @@ const StudProduct = ({ product, image, reverse  }) => {
                     </div>
                 </div>
 
-                <div className={`relative flex justify-center order-${reverse ? '1' : '2'}`}>
+                {/* Right Side - Image */}
+                <div className="relative flex justify-center flex-1">
                     <Image src={image} alt={product.title} width={500} height={300} className="w-full h-auto" />
                 </div>
+
             </div>
         </section>
     );

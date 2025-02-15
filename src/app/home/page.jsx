@@ -7,6 +7,7 @@ import ProductDetails from '@/Components/HomeProduct';
 import data from '@/public/data';
 import VisionMission from '@/Components/VisionComponent';
 import WarehouseSupplySection from '@/Components/Warehouse';
+import Footer from '@/Components/footer';
 export default function HomePage() {
   return (
     <div className="bg-black text-white min-h-screen">
@@ -17,7 +18,8 @@ export default function HomePage() {
       <VisionMission/>
       <ProductDetails product={data.productDetails} />
       <WarehouseSupplySection/>
-      <ContactSection />
+      <ContactSection bgColor={"yellow"}/>
+      <Footer/>
     </div>
   );
 }
