@@ -5,8 +5,8 @@ import ContactSection from '@/Components/ContactForm'
 import data from '@/public/data'
 import QualitySectionProp from '@/Components/QualitySectionProp'
 import StudProduct from '@/Components/ProductsProp'
-import studProduct from "../../public/studProduct.png"
 import FurringProduct from "../../public/FurringProduct.png"
+import studProduct from "../../public/studProduct.png"
 import channel from "../../public/channel.png"
 import runnerProduct from "../../public/runnerProduct.png"
 import WarehouseSupplySection from '@/Components/Warehouse';
