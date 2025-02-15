@@ -5,7 +5,7 @@ import ContactSection from '@/Components/ContactForm'
 import data from '@/public/data'
 import QualitySectionProp from '@/Components/QualitySectionProp'
 import StudProduct from '@/Components/ProductsProp'
-import studProduct from "../../public/StudProduct.png"
+import studProduct from "../../public/studProduct.png"
 import FurringProduct from "../../public/FurringProduct.png"
 import channel from "../../public/channel.png"
 import runnerProduct from "../../public/runnerProduct.png"
@@ -28,6 +28,7 @@ export default function Product() {
                 bgColor={"#323232"}
                 heading={data.qualitySectionProduct.heading}
                 sections={data.qualitySectionProduct.sections}
+                isProductPage={true}
             />
             <WarehouseSupplySection />
             <ContactSection />

@@ -7,7 +7,7 @@ export default function TrustSection() {
   return (
     <section className="flex flex-col md:flex-row items-stretch bg-yellow-500 text-white">
       {/* Left Image */}
-      <div className="w-full md:w-1/3">
+      <div className="w-full md:w-1/4">
         <Image
           src={trust1}
           alt="Steel Manufacturing"
@@ -17,13 +17,12 @@ export default function TrustSection() {
         />
       </div>
 
-      {/* Centered Text */}
-      <div className="w-full md:w-1/3 px-8 flex flex-col justify-center items-start text-left relative">
-        <h2 className="text-3xl lg:text-4xl font-light leading-tight tracking-wide">
+      {/* Center Content (Wider than before) */}
+      <div className="w-full md:w-1/2 px-6 md:px-12 flex flex-col justify-center items-start text-left relative">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-light leading-tight tracking-wide">
           {data.trust.heading1}<br />
           {data.trust.heading2}
         </h2>
-        {/* Animated Arrow Button */}
         <button className="absolute bottom-6 right-6 bg-white rounded-full p-3 hover:bg-opacity-90 transition-all group shadow-lg">
           <svg
             className="w-5 h-5 transform rotate-[315deg] text-yellow-500 transition-transform duration-300 group-hover:rotate-90"
@@ -42,7 +41,7 @@ export default function TrustSection() {
       </div>
 
       {/* Right Image */}
-      <div className="w-full md:w-1/3">
+      <div className="w-full md:w-1/4">
         <Image
           src={trust2}
           alt="Steel Products"
