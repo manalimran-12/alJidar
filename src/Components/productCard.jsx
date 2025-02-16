@@ -8,7 +8,6 @@ import runnerImg from "../public/runner.png";
 import wallAngleImg from "../public/wallangle.png";
 import data from "@/public/data";
 import qualtityBackground from "../public/qualityPage.png"
-import testImage from "../public/download.jpeg"
 import { useRouter } from "next/navigation";
 
 const ProductCard = ({ title, description, image, isLarge = false, yellowBg = false, targetId }) => {
@@ -33,7 +32,7 @@ const ProductCard = ({ title, description, image, isLarge = false, yellowBg = fa
           <p className="text-sm max-w-[50%] leading-relaxed text-black">{description}</p>
         </div>
 
-
+        {/* Dynamic Button */}
         <div className="absolute bottom-8 left-25">
           <button
             className="bg-black group-hover:bg-white rounded-full p-3 transition-colors duration-300"
@@ -57,7 +56,8 @@ const ProductCard = ({ title, description, image, isLarge = false, yellowBg = fa
 
         <div className="absolute right-8 top-1/2 transform -translate-y-1/2 w-[45%] h-[200px]">
           <Image
-            src={testImage}
+            src={image}
+            alt={title}
             fill
             className="object-contain transform group-hover:scale-110 transition-transform duration-500"
           />
