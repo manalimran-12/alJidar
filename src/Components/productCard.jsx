@@ -55,14 +55,14 @@ const ProductCard = ({ title, description, image, isLarge = false, yellowBg = fa
           </button>
         </div>
 
-        <div className="absolute right-8 top-1/2 transform -translate-y-1/2 w-[45%] h-[200px]">
+        {/* <div className="right-8 top-1/2 transform -translate-y-1/2 w-[45%] h-[200px]">
           <Image
             src={testImage}
             alt=""
             fill
             className="object-contain transform group-hover:scale-110 transition-transform duration-500"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
