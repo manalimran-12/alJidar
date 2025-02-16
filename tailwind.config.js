@@ -17,4 +17,10 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: [
+    "bg-red-500",
+    "text-center",
+    "grid-cols-1",
+    "md:grid-cols-2"
+  ],
 };
