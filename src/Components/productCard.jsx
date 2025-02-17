@@ -25,7 +25,7 @@ const ProductCard = ({ title, description, image, isLarge = false, yellowBg = fa
       <div className="p-8 h-full flex flex-col justify-between relative">
         <div>
           <h3 className={`font-bold mb-2 text-yellow-500 group-hover:text-black 
-            ${isLarge ? 'text-3xl' : 'text-2xl'}`}>
+            ${isLarge ? 'text-5xl' : 'text-3xl'}`}>
             {title}
           </h3>
 
