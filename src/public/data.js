@@ -97,7 +97,7 @@ const data = {
     sections: [
       {
         id: "Innovative",
-        title: "Innovative Facilities & Expertise",
+        title: "Innovative Facilities & Expertise:",
         content:
           "Advanced production units powered by cutting-edge technology and over a decade of industry experience.",
       },
@@ -124,7 +124,7 @@ const data = {
     availability: "Studs are available in 0.35 mm – 0.90 mm and upon request other thickness will be provided.",
     specifications: {
       headers: ["Thickness (mm)", "Width (mm)", "Length (mm)", "Flang (mm)", "Package (pcs)"],
-      values: ["0.35, 0.40, 0.45", "39.46.50.61.68.70.73.90.98.123.148", "3000", "34 and 36", "250/pallet"]
+      values: ["0.35, 0.40, 0.45", "39/46/50/61/68/70/73/90/98/123/148", "3000", "34 and 36", "250/pallet"]
     }
   },
   product3: {
@@ -136,7 +136,7 @@ const data = {
     availability: "Studs are available in 0.35 mm – 0.90 mm and upon request other thickness will be provided.",
     specifications: {
       headers: ["Thickness (mm)", "Width (mm)", "Length (mm)", "Flang (mm)", "Package (pcs)"],
-      values: ["0.35, 0.40, 0.45", "39.46.50.61.68.70.73.90.98.123.148", "3000", "34 and 36", "250/pallet"]
+      values: ["0.35, 0.40, 0.45", "39/46/50/61/68/70/73/90/98/123/148", "3000", "34 and 36", "250/pallet"]
     }
   },
   product2: {
@@ -148,7 +148,7 @@ const data = {
     availability: "FSP Furring Channel is a hat-shaped corrosion -  resistant framing component used to fur out masonry walls and ceiling assemblies. In concrete wall applications, furring channel is installed vertically to the wall surface using concrete nails or power-driven fasteners.",
     specifications: {
       headers: ["Thickness (mm)", "Width (mm)", "Length (mm)", "Flang (mm)", "Package (pcs)"],
-      values: ["0.35, 0.40, 0.45", "39.46.50.61.68.70.73.90.98.123.148", "3000", "34 and 36", "250/pallet"]
+      values: ["0.35, 0.40, 0.45", "39/46/50/61/68/70/73/90/98/123/148", "3000", "34 and 36", "250/pallet"]
     }
   },
   product4: {
@@ -160,7 +160,7 @@ const data = {
     availability: "FSP Furring Channel is a hat-shaped corrosion -  resistant framing component used to fur out masonry walls and ceiling assemblies. In concrete wall applications, furring channel is installed vertically to the wall surface using concrete nails or power-driven fasteners.",
     specifications: {
       headers: ["Thickness (mm)", "Width (mm)", "Length (mm)", "Flang (mm)", "Package (pcs)"],
-      values: ["0.35, 0.40, 0.45", "39.46.50.61.68.70.73.90.98.123.148", "3000", "34 and 36", "250/pallet"]
+      values: ["0.35, 0.40, 0.45", "39/46/50/61/68/70/73/90/98/123/148", "3000", "34 and 36", "250/pallet"]
     }
   },
 
