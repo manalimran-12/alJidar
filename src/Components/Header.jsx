@@ -33,7 +33,7 @@ export default function HeaderSection() {
             alt="Logo"
             width={150}
             height={50}
-            className="cursor-pointer"
+            className="cursor-pointer w-24 md:w-36"
             onClick={() => router.push("/home")}
           />
 
