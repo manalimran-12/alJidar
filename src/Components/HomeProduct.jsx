@@ -2,15 +2,15 @@
 
 import React from "react";
 import Image from "next/image";
-import iso from "../public/Isolation_Mode.png";
+import iso from "../public/background.png";
 import logo from "../public/profile.png"
 const ProductDetails = ({ product }) => {
   return (
     <section className="bg-[#252525] text-white py-12 px-6 md:px-16 relative">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
-        <div className="relative flex justify-center">
-          <Image src={iso} alt={product.title} width={745} height={602} className="w-full h-auto" />
+        <div className="relative flex justify-center left-0">
+          <Image src={iso} alt={product.title} width={805} height={702} className="w-full h-auto object-contain object-left" />
         </div>
 
         <div className="text-left w-full">

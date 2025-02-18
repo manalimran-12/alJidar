@@ -11,8 +11,8 @@ import qualtityBackground from "../public/qualityPage.png"
 import { useRouter } from "next/navigation";
 
 const ProductCard = ({ title, description, image, isLarge = false, yellowBg = false, targetId }) => {
-
   const router = useRouter();
+
   const handleNavigation = () => {
     router.push("/product");
   };
@@ -28,12 +28,11 @@ const ProductCard = ({ title, description, image, isLarge = false, yellowBg = fa
            ${isLarge ? 'text-3xl' : 'text-2xl'}`}>
             {title}
           </h3>
-
           <p className="text-sm max-w-[50%] leading-relaxed text-black">{description}</p>
         </div>
 
         {/* Dynamic Button */}
-        <div className="absolute bottom-8 left-25">
+        <div className="absolute bottom-8 left-8">
           <button
             className="bg-black group-hover:bg-white rounded-full p-3 transition-colors duration-300"
             onClick={handleNavigation}
@@ -53,13 +52,13 @@ const ProductCard = ({ title, description, image, isLarge = false, yellowBg = fa
             </svg>
           </button>
         </div>
-
-        <div className="absolute right-8 top-1/2 transform -translate-y-1/2 w-[45%] h-[200px]">
+        
+        <div className="absolute right-0 top-1/2 transform -translate-y-1/2 lg:w-[60%] lg:h-[300px] w-[50%] h-[200px] xl:w-[60%] xl:h-[300px]">
           <Image
             src={image}
             alt={title}
             fill
-            className="object-contain transform group-hover:scale-110 transition-transform duration-500"
+            className="object-contain object-right transform group-hover:scale-110 transition-transform duration-500"
           />
         </div>
       </div>
