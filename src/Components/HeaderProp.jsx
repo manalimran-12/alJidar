@@ -13,7 +13,7 @@ export default function HeaderProp({ text, subtitle, className }) {
     return (
         <div className="w-full bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${homeBackground.src})` }}>
             <header className="flex flex-col p-4 lg:px-12 bg-no-repeat bg-cover bg-center relative">
-                <div className="flex justify-end items-center gap-4 text-white text-sm">
+                <div className="flex flex-wrap justify-center md:justify-end items-center gap-2 md:gap-4 text-white text-xs md:text-sm">
                     <MdPhone className="text-yellow-500" />
                     <span>{data.header.phoneHeader}</span>
                     <MdEmail className="text-yellow-500" />
@@ -49,7 +49,7 @@ export default function HeaderProp({ text, subtitle, className }) {
                         dangerouslySetInnerHTML={{ __html: text }}
                     ></h1>
                 </div>
-                <div className={`absolute bottom-4 left-1/2 transform -translate-x-1/2 sm:bottom-6 sm:right-10 sm:left-auto md:bottom-8 md:right-12 lg:bottom-24 lg:right-32 xl:right-40 ${className}`}>
+                <div className={`absolute bottom-4 left-1/2 transform -translate-x-1/2 sm:bottom-6 sm:right-10 sm:left-auto md:bottom-8 md:right-12 lg:bottom-24 lg:right-32 xl:right-40 sm:justify-center  ${className}`}>
                     <button
                         className="w-14 h-14 bg-gray-700 border-2 border-yellow-500 rounded-full flex items-center justify-center text-yellow-500 text-xl hover:bg-gray-600 transition-colors"
                         onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}

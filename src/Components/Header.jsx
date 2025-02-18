@@ -55,35 +55,30 @@ export default function HeaderSection() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative flex flex-col md:flex-row justify-end items-center px-4 md:px-12 lg:px-32 py-12 md:py-20 text-white">
-        <div className="max-w-4xl flex flex-col items-end text-right p-6 md:p-8 rounded-lg">
+      <section className="flex-1 flex flex-col justify-center items-end px-4 md:px-12 lg:px-32 py-8 md:py-16 text-white relative">
+        <div className="w-full max-w-4xl flex flex-col items-end text-right">
           <button className="text-yellow-400 px-4 py-1 text-xs md:text-sm font-bold rounded bg-[#323232]">
             {data.header.subtitle}
           </button>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-4">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-3 md:mt-4">
             {data.header.mainHeading1}
           </h1>
-          <h1 className="text-yellow-500 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mt-2 md:mt-4">
+          <h1 className="text-yellow-500 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-2">
             {data.header.headerName}
           </h1>
 
-          {/* Scroll Button */}
-          <div className="mt-6 md:mt-10">
-            <button
-              className="w-12 md:w-14 h-12 md:h-14 bg-gray-700 border-2 border-yellow-500 rounded-full flex items-center justify-center text-yellow-500 text-lg md:text-xl hover:bg-gray-600 transition"
-              onClick={() =>
-                document.getElementById("products")?.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              ↓
-            </button>
-          </div>
+          <button
+            className="mt-6 md:mt-8 w-10 h-10 md:w-12 md:h-12 bg-gray-700/80 border border-yellow-500 rounded-full flex items-center justify-center text-yellow-500 hover:bg-gray-600/80 transition-all group md:self-end"
+            onClick={() => document.getElementById("products")?.scrollIntoView({ behavior: "smooth" })}
+          >
+            ↓
+          </button>
         </div>
 
         {/* Header Description */}
-        <div className="absolute left-4 md:left-10 bottom-6 md:bottom-16 w-full max-w-3xl text-xs sm:text-sm md:text-base text-gray-300 px-4 md:px-0">
+        <div className="w-full max-w-3xl text-right mt-6 md:mt-8">
           <p
-            className="mt-2"
+            className="text-xs sm:text-sm text-gray-300"
             dangerouslySetInnerHTML={{ __html: data.header.headerPara }}
           />
         </div>
