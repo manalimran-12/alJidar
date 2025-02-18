@@ -34,8 +34,8 @@ const QualitySectionProp = ({ heading, sections, bgColor, hover, isProductPage =
                         onMouseEnter={() => setHoveredSection(section.id)}
                         onMouseLeave={() => setHoveredSection("quality")}
                         className={`transition-all duration-300 px-6 py-6 rounded-lg cursor-pointer transform ${hoveredSection === section.id
-                                ? "shadow-xl scale-105 bg-opacity-80"
-                                : "bg-[#252525] scale-100"
+                            ? "shadow-xl scale-105 bg-opacity-80"
+                            : "bg-[#252525] scale-100"
                             }`}
                         style={{
                             backgroundColor: hoveredSection === section.id ? hover : "#323232",
@@ -43,8 +43,8 @@ const QualitySectionProp = ({ heading, sections, bgColor, hover, isProductPage =
                     >
                         <h3
                             className={`text-lg md:text-xl font-bold tracking-wide transition-colors duration-300 ${hoveredSection === section.id
-                                    ? "text-yellow-500"
-                                    : "text-white"
+                                ? "text-yellow-500"
+                                : "text-white"
                                 }`}
                         >
                             {section.title}

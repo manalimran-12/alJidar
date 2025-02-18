@@ -9,9 +9,9 @@ import layer from "../public/Layer_1.png";
 const Footer = () => {
     return (
         <div className="relative bg-[#323232]">
-            {/* Background Image - Visible on Medium+ Screens */}
+            {/* Background Image */}
             <div
-                className="absolute bottom-0 left-0 w-full h-[250px] md:h-[350px] bg-no-repeat bg-cover bg-center md:block"
+                className="absolute bottom-0 left-0 w-full h-[250px] md:h-[350px] bg-no-repeat bg-cover bg-center"
                 style={{
                     backgroundImage: `url(${footerBg.src})`,
                     backgroundPosition: "bottom center",
@@ -27,7 +27,7 @@ const Footer = () => {
                         <Image src={layer} alt="Company Logo" width={150} height={50} />
                         <p className="mt-2 text-xs md:text-base">{data.footer.companyDescription}</p>
 
-                        {/* Email Subscription - Responsive */}
+                        {/* Email Subscription */}
                         <div className="mt-4 flex flex-col md:flex-row items-center w-full max-w-[220px] md:max-w-[300px]">
                             <input
                                 type="email"
@@ -38,8 +38,6 @@ const Footer = () => {
                                 {data.footer.subscribeButton}
                             </button>
                         </div>
-
-
                     </div>
 
                     {/* Center - Contact Info */}
@@ -70,7 +68,6 @@ const Footer = () => {
                             </a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

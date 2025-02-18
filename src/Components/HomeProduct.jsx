@@ -4,12 +4,13 @@ import React from "react";
 import Image from "next/image";
 import iso from "../public/background.png";
 import logo from "../public/profile.png";
+
 const ProductDetails = ({ product }) => {
   return (
     <section className="bg-[#252525] text-white py-12 relative">
       <div className="max-w-9xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-
-        <div className="relative flex justify-center left-0">
+        {/* ISO Image for Medium & Large Screens */}
+        <div className="hidden md:flex relative justify-center left-0">
           <Image src={iso} alt={product.title} width={805} height={702} className="w-full h-auto object-contain object-left" />
         </div>
 
@@ -20,13 +21,11 @@ const ProductDetails = ({ product }) => {
 
           <h2 className="text-3xl md:text-5xl font-bold mt-4"
             dangerouslySetInnerHTML={{ __html: product.heading }}>
-
           </h2>
-
 
           <div className="mt-6 bg-[#323232] p-4 rounded-lg overflow-x-auto max-h-96 custom-scrollbar ">
             <table className="w-full text-left text-gray-300 border-collapse">
-              <thead >
+              <thead>
                 <tr className="border-b border-gray-600 text-sm">
                   <th className="bg-[#252525] py-3 px-4 font-bold">Technical Parameters</th>
                   <th className="bg-[#252525] py-3 px-4 font-bold">Detail</th>
@@ -45,9 +44,12 @@ const ProductDetails = ({ product }) => {
               </tbody>
             </table>
           </div>
-
         </div>
 
+        {/* ISO Image for Small Screens */}
+        <div className="block md:hidden relative flex justify-center left-0">
+          <Image src={iso} alt={product.title} width={805} height={702} className="w-full h-auto object-contain object-left" />
+        </div>
       </div>
       <div className="flex justify-center items-center mt-12 w-full">
         <Image src={logo} alt="AL JIDAR LOGO" width={300} height={80} className="w-full h-auto" />
