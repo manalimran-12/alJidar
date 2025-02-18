@@ -6,7 +6,7 @@ import data from "../public/data.js";
 export default function TrustSection() {
   return (
     <section className="flex flex-col md:flex-row items-stretch bg-yellow-500 text-white">
-      <div className="w-full md:w-1/4">
+      <div className="w-full md:w-1/4 md:h-auto">
         <Image
           src={trust1}
           alt="Steel Manufacturing"
