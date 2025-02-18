@@ -5,35 +5,34 @@ import Image from "next/image";
 import data from "@/public/data.js"; 
 import steelImage from "../public/steel.png"; 
 
-const VisionMission = () => {
+export default function VisionMission() {
     return (
-        <section className="bg-[#252525] text-white py-12 px-6 md:px-16">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
-                <div className="max-w-lg mx-auto space-y-8">
- 
-                    <div>
-                        <h2 className="text-xl md:text-3xl font-light">
-                            {data.vision.title} <span className="text-yellow-500 font-bold">{data.vision.highlight}</span>
-                        </h2>
-                        <p className="text-gray-300 mt-2" dangerouslySetInnerHTML={{ __html: data.vision.content }}></p>
-                    </div>
-
-                    <div className="bg-[#323232] p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl md:text-3xl font-light">
-                            {data.mission.title} <span className="text-yellow-500 font-bold">{data.mission.highlight}</span>
-                        </h2>
-                        <p className="text-gray-300 mt-2">{data.mission.content}</p>
-                    </div>
-                </div>
-
-                <div className="relative flex justify-center">
-                    <Image src={steelImage} alt="Steel Products" width={700} height={400} className="w-full h-auto" />
-                </div>
-
-            </div>
-        </section>
+      <div className="flex flex-col md:flex-row items-center bg-[#252525] text-white">
+        <div className="md:w-1/2 space-y-6 p-14 md:p-20 lg:p-24 xl:p-32">
+          <div  >
+            <h2 className="text-3xl font-bold">
+              {data.vision.title} <span className="text-yellow-500 font-bold">{data.vision.highlight}</span>
+            </h2>
+            <p className="text-gray-300 mt-2" dangerouslySetInnerHTML={{ __html: data.vision.content }}></p>
+          </div>
+          <div className="bg-[#323232] p-6 rounded-md">
+            <h2 className="text-2xl font-bold">
+            {data.mission.title} <span className="text-yellow-500 font-bold">{data.mission.highlight}</span>
+            </h2>
+            <p className="text-gray-300 mt-2">{data.mission.content}</p>
+          </div>
+        </div>
+        <div className="md:w-1/2">
+          <Image
+            src={steelImage}
+            alt="Steel Profiles"
+            className="w-full h-auto md:h-full object-cover md:rounded-none md:border-r-0"
+          />
+        </div>
+      </div>
     );
-};
+  }
+  
 
-export default VisionMission;
+ 
+

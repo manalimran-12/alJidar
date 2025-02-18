@@ -6,7 +6,7 @@ import { FaEnvelope, FaFacebookF, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt, FaTw
 const ContactSection = () => {
     return (
         <div className="bg-[#323232] text-white" id='contact'>
-            <div className="flex flex-col md:flex-row items-center justify-between p-8 md:p-16">
+            <div className="flex flex-col md:flex-row items-center justify-between  ">
                 <div className="w-full md:w-1/2 mb-8 md:mb-0">
                     <Image
                         src={rolls}
@@ -16,7 +16,7 @@ const ContactSection = () => {
                         className="w-full h-auto rounded-lg  "
                     />
                 </div>
-                <div className="w-full md:w-1/2 bg-[#323232] p-8 rounded-lg  ">
+                <div className="w-full md:w-1/2 bg-[#323232] p-16 rounded-lg  ">
                     <div className="text-left mb-10">
                         <button className="bg-[#252525] text-yellow-400 px-4 py-2 rounded-md text-sm">CONTACT US/BOOK AN APPOINTMENT</button>
                         <h2 className="text-2xl md:text-4xl font-bold text-white mt-4">{data.title}</h2>
