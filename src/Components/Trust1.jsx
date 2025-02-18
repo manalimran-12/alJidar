@@ -6,7 +6,6 @@ import data from "../public/data.js";
 export default function TrustSection() {
   return (
     <section className="flex flex-col md:flex-row items-stretch bg-yellow-500 text-white">
-      {/* Left Image */}
       <div className="w-full md:w-1/4">
         <Image
           src={trust1}
@@ -17,10 +16,9 @@ export default function TrustSection() {
         />
       </div>
 
-      {/* Center Content (Wider than before) */}
-      <div className="w-full md:w-1/2 px-6 md:px-12 flex flex-col justify-center items-start text-left relative">
+      <div className="w-full md:w-1/2 px-6 md:px-12 flex flex-col justify-center items-start text-left relative h-80 md:h-auto">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-light leading-tight tracking-wide">
-          {data.trust.heading1}<br />
+          {data.trust.heading1}<br/>
           {data.trust.heading2}
         </h2>
         <button className="absolute bottom-6 right-6 bg-white rounded-full p-3 hover:bg-opacity-90 transition-all group shadow-lg">
@@ -40,7 +38,6 @@ export default function TrustSection() {
         </button>
       </div>
 
-      {/* Right Image */}
       <div className="w-full md:w-1/4">
         <Image
           src={trust2}
