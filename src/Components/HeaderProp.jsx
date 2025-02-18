@@ -18,20 +18,30 @@ export default function HeaderProp({ text, subtitle, className }) {
                     <span>{data.header.phoneHeader}</span>
                     <MdEmail className="text-yellow-500" />
                     <span>{data.footer.contactEmail}</span>
-                    <FaFacebookF className="cursor-pointer" />
-                    <FaLinkedinIn className="cursor-pointer" />
+                    <FaFacebookF className="cursor-pointer hover:text-yellow-500 transition" />
+                    <FaLinkedinIn className="cursor-pointer hover:text-yellow-500 transition" />
                 </div>
-                <div className="flex justify-between items-center mt-4">
-                    <Image src={logo} alt="Logo" width={180} height={60} onClick={() => router.push("/home")} className="cursor-pointer w-24 md:w-36" />
-                    <div className="flex items-center gap-6">
+
+                {/* Logo & Navigation */}
+                <div className="flex flex-wrap justify-between items-center mt-4">
+                    <Image
+                        src={logo}
+                        alt="Logo"
+                        width={150}
+                        height={50}
+                        className="cursor-pointer w-24 md:w-36"
+                        onClick={() => router.push("/home")}
+                    />
+
+                    <div className="flex items-center gap-4 md:gap-6">
                         <button
-                            className="text-white font-medium hover:text-yellow-500 transition-colors"
+                            className="text-white font-medium text-sm md:text-base hover:text-yellow-500 transition"
                             onClick={() => router.push("/product")}
                         >
                             Our Products
                         </button>
                         <button
-                            className="bg-yellow-500 text-black px-6 py-2 rounded hover:bg-yellow-600 transition-colors"
+                            className="bg-yellow-500 text-black px-4 md:px-6 py-2 rounded text-sm md:text-base hover:bg-yellow-600 transition"
                             onClick={() => router.push("/contact")}
                         >
                             Contact Us
