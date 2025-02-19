@@ -20,14 +20,13 @@ const Footer = () => {
 
             {/* Footer Content Wrapper */}
             <div className="relative z-10 flex flex-col items-center justify-center py-6 md:py-12">
-                <div className="bg-[#252525] p-6 md:p-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-300 rounded-lg shadow-lg w-full min-h-[250px] md:min-h-[350px]">
+                <div className="bg-[#252525] p-6 md:p-10 max-w-7xl mx-auto flex flex-col md:flex-row justify-center md:justify-between items-center gap-6 md:gap-12 text-gray-300 rounded-lg shadow-lg w-full min-h-[250px] md:min-h-[350px]">
 
-                    {/* Left - Company Info */}
+
                     <div className="text-left w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left">
                         <Image src={layer} alt="Company Logo" width={150} height={50} />
                         <p className="mt-2 text-xs md:text-base">{data.footer.companyDescription}</p>
 
-                        {/* Email Subscription */}
                         <div className="mt-4 flex flex-col md:flex-row items-center w-full max-w-[220px] md:max-w-[300px]">
                             <input
                                 type="email"
@@ -40,7 +39,6 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {/* Center - Contact Info */}
                     <div className="text-left w-full md:w-1/3 mt-6 md:mt-0 flex flex-col items-center md:items-start text-center md:text-left">
                         <h3 className="text-sm md:text-lg font-bold text-white">Our Information</h3>
 
@@ -48,19 +46,23 @@ const Footer = () => {
                             <FaEnvelope className="text-[#FBA919]" /> {data.footer.contactEmail}
                         </p>
 
-                        {data.footer.phoneNumbers.map((phone, index) => (
-                            <p key={index} className="flex items-center gap-2 text-xs md:text-base">
-                                <FaPhoneAlt className="text-[#FBA919]" /> {phone}
-                            </p>
-                        ))}
+                        <div className="flex flex-wrap gap-2">
+                            <FaPhoneAlt className="text-[#FBA919]" />
+                            {data.footer.phoneNumbers.map((phone, index) => (
+                                <p key={index} className={`flex items-center gap-2 text-xs md:text-base ${index === 1 ? 'text-[#FBA919]' : ''}`}>
+                                    {phone}
+                                </p>
+                            ))}
+                        </div>
+                        <div className="flex items-start gap-2 text-xs md:text-base">
+                            <FaMapMarkerAlt className="text-[#FBA919] mt-1" />
+                            <p>{data.footer.address}</p>
+                        </div>
 
-                        <p className="flex items-center gap-2 text-xs md:text-base">
-                            <FaMapMarkerAlt className="text-[#FBA919] shrink-0" /> {data.footer.address}
-                        </p>
                     </div>
 
                     {/* Right - Social Media */}
-                    <div className="text-left w-full md:w-1/3 mt-6 md:mt-0 flex flex-col items-center md:items-end text-center md:text-right">
+                    <div className="text-left w-full md:w-1/3 mt-6 md:mb-20 flex flex-col items-center md:items-center text-center md:text-right">
                         <h3 className="text-sm md:text-lg font-bold text-white">{data.footer.followUs}</h3>
                         <div className="flex justify-center md:justify-end gap-4 mt-2">
                             <a href="#" className="text-2xl">
