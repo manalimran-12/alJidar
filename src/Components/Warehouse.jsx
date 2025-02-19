@@ -28,7 +28,7 @@ const WarehouseSupplySection = () => {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.4, ease: "easeInOut" }}
-          className="relative w-full aspect-[4/3] bg-yellow-500 overflow-visible order-2 md:order-1 h-[600]"
+          className="relative w-full aspect-[4/3] bg-[#FBA919] overflow-visible order-2 md:order-1 h-[600]"
         >
           <AnimatePresence mode="wait">
             {showSecondImage ? (
@@ -78,14 +78,14 @@ const WarehouseSupplySection = () => {
           transition={{ duration: 0.8, ease: "easeInOut" }}
           className="text-left order-1 md:order-2"
         >
-          <button className="bg-[#323232] text-yellow-500 px-4 py-1 text-sm font-bold rounded">
+          <button className="bg-[#323232] text-[#FBA919] px-4 py-1 text-sm font-bold rounded">
             PRODUCT SUPPLY
           </button>
 
-          <h2 className="text-xl sm:text-2xl md:text-3xl mt-4">
-            <span className="inline-flex flex-wrap items-center">
+          <h2 className=" text-xl sm:text-2xl md:text-3xl mt-4">
+            <span className="  items-center">
               {data.p.heading}
-              <span className="inline-flex relative w-[150px] sm:w-[185px] h-[30px] ml-2 overflow-hidden">
+              <span className=" relative w-[170px] sm:w-[300px] h-[40px] ml-2 overflow-hidden">
                 <AnimatePresence mode="wait">
                   <motion.span
                     key={showSecondImage ? "BIGSTORE" : "WAREHOUSE"}
@@ -93,7 +93,7 @@ const WarehouseSupplySection = () => {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: -20, opacity: 0 }}
                     transition={{ duration: 0.6, ease: "easeInOut" }}
-                    className="text-yellow-500 absolute w-full text-left"
+                    className=" font-agressive text-[#FBA919] absolute w-full text-left"
                   >
                     {showSecondImage ? "BIGSTORE" : "WAREHOUSE"}
                   </motion.span>
@@ -112,7 +112,7 @@ const WarehouseSupplySection = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="mt-6 bg-yellow-500 text-black px-4 sm:px-6 py-2 sm:py-3 rounded font-bold hover:bg-yellow-600 transition-colors text-sm sm:text-base"
+            className="mt-6 bg-[#FBA919] text-black px-4 sm:px-6 py-2 sm:py-3 rounded font-bold hover:bg-yellow-600 transition-colors text-sm sm:text-base"
             onClick={() => { router.push("/contact") }}
           >
             {data.p.contact}

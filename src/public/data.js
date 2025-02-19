@@ -13,8 +13,8 @@ const data = {
     headerPara:
       "Al Jidar Steel Manufacturing is a joint venture of three co-founders specialized in the field of Gypsum/Drywall " +
       "accessories like Stud, Runner, C-Channel, Wall Angle, Furring Channel (Omega). Established in Riyadh, Kingdom of " +
-      "<span class='text-yellow-500'>Saudi Arabia in 2023</span> with a production capacity of " +
-      "<span class='text-yellow-500'>500 Mt. Per Month.</span>",
+      "<span class='text-[#FBA919]'>Saudi Arabia in 2023</span> with a production capacity of " +
+      "<span class='text-[#FBA919]'>500 Mt. Per Month.</span>",
 
     phoneHeader: "+966 59 0283 005",
     subtitle: "GYPSUM/DRYWALL STEEL PRODUCTS",
@@ -58,9 +58,9 @@ const data = {
 
   Contact: {
     subtitle1: "CONNECT WITH US",
-    mainHeading1: "YOUR <span class='text-yellow-500'>SUPPORT<br>TEAM</span> AWAITS",
+    mainHeading1: "YOUR <span class='text-[#FBA919] font-agressive '>SUPPORT<br>TEAM</span> AWAITS",
     subtitle2: "BUILT TO LAST",
-    mainHeading2: "ENGINEERED FOR <span class='text-yellow-500'>PRECISION AND<br>PREFORMANCE</span> AWAITS",
+    mainHeading2: "ENGINEERED FOR <span class='text-[#FBA919] font-agressive'>PRECISION AND<br>PREFORMANCE</span> AWAITS",
   },
 
   qualitySection: {
@@ -92,12 +92,12 @@ const data = {
     textColor: "white",
     heading: {
 
-      title: "Why FOR <span class='text-yellow-500'>AL Jidar Steel<br></span> Stands Out",
+      title: "Why FOR <span class='text-[#FBA919] font-agressive'>AL Jidar Steel<br></span> Stands Out",
     },
     sections: [
       {
         id: "Innovative",
-        title: "Innovative Facilities & Expertise:",
+        title: "Innovative Facilities & Expertise",
         content:
           "Advanced production units powered by cutting-edge technology and over a decade of industry experience.",
       },
@@ -169,7 +169,7 @@ const data = {
     category: "GYPSUM/DRYWALL STEEL PRODUCTS",
     title: "Comprehensive Product Details",
     image: "/public/product-details.png",
-    heading: " COMPREHENSIVE <span class='text-yellow-500'>PRODUCT DETAILS</span>",
+    heading: " COMPREHENSIVE <span class='text-[#FBA919] font-agressive'>PRODUCT DETAILS</span>",
     "technicalSpecifications": [
       { "parameter": "Zinc Coating", "detail": "Z60 – Z275 g/m2 both sides (Z60 GSM)" },
       { "parameter": "Tensile Strength", "detail": "TS 350-360" },

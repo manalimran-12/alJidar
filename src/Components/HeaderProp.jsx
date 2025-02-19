@@ -14,12 +14,12 @@ export default function HeaderProp({ text, subtitle, className }) {
         <div className="w-full bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${homeBackground.src})` }}>
             <header className="flex flex-col p-4 lg:px-12 bg-no-repeat bg-cover bg-center relative">
                 <div className="flex flex-wrap justify-center md:justify-end items-center gap-2 md:gap-4 text-white text-xs md:text-sm">
-                    <MdPhone className="text-yellow-500" />
+                    <MdPhone className="text-[#FBA919]" />
                     <span>{data.header.phoneHeader}</span>
-                    <MdEmail className="text-yellow-500" />
+                    <MdEmail className="text-[#FBA919]" />
                     <span>{data.footer.contactEmail}</span>
-                    <FaFacebookF className="cursor-pointer hover:text-yellow-500 transition" />
-                    <FaLinkedinIn className="cursor-pointer hover:text-yellow-500 transition" />
+                    <FaFacebookF className="cursor-pointer hover:text-[#FBA919] transition" />
+                    <FaLinkedinIn className="cursor-pointer hover:text-[#FBA919] transition" />
                 </div>
 
                 {/* Logo & Navigation */}
@@ -35,13 +35,13 @@ export default function HeaderProp({ text, subtitle, className }) {
 
                     <div className="flex items-center gap-4 md:gap-6">
                         <button
-                            className="text-white font-medium text-sm md:text-base hover:text-yellow-500 transition"
+                            className="text-white font-medium text-sm md:text-base hover:text-[#FBA919] transition"
                             onClick={() => router.push("/product")}
                         >
                             Our Products
                         </button>
                         <button
-                            className="bg-yellow-500 text-black px-4 md:px-6 py-2 rounded text-sm md:text-base hover:bg-yellow-600 transition"
+                            className="bg-[#FBA919] text-black px-4 md:px-6 py-2 rounded text-sm md:text-base hover:bg-yellow-600 transition"
                             onClick={() => router.push("/contact")}
                         >
                             Contact Us
@@ -51,7 +51,7 @@ export default function HeaderProp({ text, subtitle, className }) {
             </header>
             <section className="relative flex justify-start items-center px-4 lg:px-32 py-20 text-white">
                 <div className="max-w-fit flex flex-col items-start text-left p-8 rounded-lg">
-                    <button className="text-yellow-400 px-4 py-1 text-xs font-bold rounded bg-[#323232]">
+                    <button className="text-[#FBA919] px-4 py-1 text-xs font-bold rounded bg-[#323232]">
                         {subtitle}
                     </button>
                     <h1
@@ -61,7 +61,7 @@ export default function HeaderProp({ text, subtitle, className }) {
                 </div>
                 <div className={`absolute bottom-4 left-1/2 transform -translate-x-1/2 sm:bottom-6 sm:right-10 sm:left-auto md:bottom-8 md:right-12 lg:bottom-24 lg:right-32 xl:right-40 sm:justify-center  ${className}`}>
                     <button
-                        className="w-14 h-14 bg-gray-700 border-2 border-yellow-500 rounded-full flex items-center justify-center text-yellow-500 text-xl hover:bg-gray-600 transition-colors"
+                        className="w-14 h-14 bg-gray-700 border-2 border-[#FBA919] rounded-full flex items-center justify-center text-[#FBA919] text-xl hover:bg-gray-600 transition-colors"
                         onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
                     >
                         ↓

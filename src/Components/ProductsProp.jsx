@@ -8,10 +8,10 @@ const StudProduct = ({ product, image, reverse = false }) => {
         <section className="bg-[#252525] text-white py-12 px-6 md:px-16 relative">
             <div className={`max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center ${reverse ? 'md:flex-row-reverse' : ''}`}>
                 <div className={`text-right ${reverse ? 'order-2' : 'order-1'}`}>
-                    <button className="bg-[#323232] text-yellow-500 px-4 py-1 text-sm font-bold rounded">
+                    <button className="bg-[#323232] text-[#FBA919] px-4 py-1 text-sm font-bold rounded">
                         {product.category}
                     </button>
-                    <h2 className="text-2xl md:text-4xl font-bold text-yellow-500 mt-4">{product.title}</h2>
+                    <h2 className=" font-agressive text-2xl md:text-4xl font-bold text-[#FBA919] mt-4">{product.title}</h2>
                     <p className="text-sm md:text-base text-gray-300 mt-4">{product.description}</p>
                     <p className="text-sm md:text-lg font-semibold mt-4">{product.availability}</p>
 

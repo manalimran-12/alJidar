@@ -24,11 +24,11 @@ export default function VisionMission() {
           <div
             onMouseEnter={() => setHovered("vision")}
             onMouseLeave={() => setHovered("vision")}
-            className={`transition-all duration-300 p-6 rounded-lg cursor-pointer transform ${hovered === "vision" ? "shadow-xl scale-105" : "scale-100"}`}
+            className={` transition-all duration-300 p-6 rounded-lg cursor-pointer transform ${hovered === "vision" ? "shadow-xl scale-105" : "scale-100"}`}
             style={{ backgroundColor: hovered === "vision" ? "#323232" : "" }}
           >
-            <h2 className={`text-3xl font-bold ${hovered === "vision" ? "text-yellow-500" : "text-white"}`}>
-              {data.vision.title} <span className="text-yellow-500 font-bold">{data.vision.highlight}</span>
+            <h2 className={`text-3xl font-bold ${hovered === "vision" ? "text-[#FBA919]" : "text-white"}`}>
+              {data.vision.title} <span className="text-[#FBA919] font-bold font-agressive">{data.vision.highlight}</span>
             </h2>
             <p className="text-gray-300 mt-2" dangerouslySetInnerHTML={{ __html: data.vision.content }}></p>
           </div>
@@ -39,8 +39,8 @@ export default function VisionMission() {
             className={`transition-all duration-300 p-6 rounded-lg cursor-pointer transform ${hovered === "mission" ? "shadow-xl scale-105" : "scale-100"}`}
             style={{ backgroundColor: hovered === "mission" ? "#323232" : "#252525" }}
           >
-            <h2 className={`text-2xl font-bold ${hovered === "mission" ? "text-yellow-500" : "text-white"}`}>
-              {data.mission.title} <span className="text-yellow-500 font-bold">{data.mission.highlight}</span>
+            <h2 className={`text-2xl font-bold ${hovered === "mission" ? "text-[#FBA919]" : "text-white"}`}>
+              {data.mission.title} <span className="text-[#FBA919] font-bold font-agressive">{data.mission.highlight}</span>
             </h2>
             <p className="text-gray-300 mt-2">{data.mission.content}</p>
           </div>
