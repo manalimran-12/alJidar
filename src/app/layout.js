@@ -1,8 +1,7 @@
 import "./globals.css";
 import { Urbanist, Instrument_Serif } from "next/font/google";
 const urbanist = Urbanist({ subsets: ["latin"] });
-const instrumentSerif = Instrument_Serif({ subsets: ["latin"], weight: ["400"] });
-
+ 
 export const metadata = {
   title: "Al-Jidar",
   description: "Trusted, experienced, quality-driven",
