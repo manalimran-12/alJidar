@@ -12,11 +12,11 @@ const ContactDetails = () => {
       content: (
         <>
           <p>
-            <span className="text-yellow-500 font-bold">Sunday – Thursday:</span> 7:00 AM – 5:00 PM
+            <span className="text-[#FBA919] font-bold">Sunday – Thursday:</span> 7:00 AM – 5:00 PM
           </p>
           <p>Friday: Closed</p>
           <p>
-            <span className="text-yellow-500 font-bold">Saturday:</span> 7:00 AM – 5:00 PM
+            <span className="text-[#FBA919] font-bold">Saturday:</span> 7:00 AM – 5:00 PM
           </p>
         </>
       ),
@@ -33,17 +33,17 @@ const ContactDetails = () => {
       content: (
         <>
           <p>
-            <span className="text-yellow-500 font-bold">Address:</span> Riyadh, Istanbul street after exit 17,
+            <span className="text-[#FBA919] font-bold">Address:</span> Riyadh, Istanbul street after exit 17,
             Kharaj Road, Saudi Arabia
           </p>
           <p>
-            <span className="text-yellow-500 font-bold">Phone:</span> 050 625 8005
+            <span className="text-[#FBA919] font-bold">Phone:</span> 050 625 8005
           </p>
           <p>
-            <span className="text-yellow-500 font-bold">Intl.:</span> +966 55 1366 106 / +966 55 1366 162
+            <span className="text-[#FBA919] font-bold">Intl.:</span> +966 55 1366 106 / +966 55 1366 162
           </p>
           <p>
-            <span className="text-yellow-500 font-bold">Email:</span> sales@aljidarsteelprofile.com
+            <span className="text-[#FBA919] font-bold">Email:</span> sales@aljidarsteelprofile.com
           </p>
         </>
       ),
@@ -61,7 +61,7 @@ const ContactDetails = () => {
               }`}
           >
             <h3
-              className={`text-xl font-bold uppercase tracking-wide ${hoveredSection === section.id ? "text-yellow-500" : "text-white"
+              className={`text-xl font-bold uppercase tracking-wide font-agressive ${hoveredSection === section.id ? "text-[#FBA919]" : "text-white"
                 }`}
             >
               {section.title}

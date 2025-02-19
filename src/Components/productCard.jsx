@@ -19,12 +19,12 @@ const ProductCard = ({ title, description, image, isLarge = false, yellowBg = fa
 
   return (
     <div
-      className={`relative overflow-hidden bg-white hover:bg-yellow-500 group transition-all duration-300   
+      className={`relative overflow-hidden bg-white hover:bg-[#FBA919] group transition-all duration-300   
         ${isLarge ? 'col-span-2' : 'col-span-1'} h-[280px]`}
     >
       <div className="p-8 h-full flex flex-col justify-between relative">
         <div>
-          <h3 className={`  font-aggressive font-bold mb-2 text-yellow-500 group-hover:text-black 
+          <h3 className={`font-agressive font-bold mb-2 text-[#FBA919] group-hover:text-black 
             ${isLarge ? 'text-xl sm:text-2xl md:text-3xl' : 'text-lg sm:text-xl md:text-2xl'}`}>
             {title}
           </h3>
@@ -40,7 +40,7 @@ const ProductCard = ({ title, description, image, isLarge = false, yellowBg = fa
             onClick={handleNavigation}
           >
             <svg
-              className="w-5 h-5 transform rotate-[45deg] text-white group-hover:text-yellow-500 transition-all duration-300"
+              className="w-5 h-5 transform rotate-[45deg] text-white group-hover:text-[#FBA919] transition-all duration-300"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -123,7 +123,7 @@ const ProductAndQualitySection = () => {
       <section className="bg-[#252525] text-white py-24 px-4 w-full md:px-8 bg-no-repeat min-h-full" style={{ backgroundImage: `url(${qualtityBackground.src})` }}>
         <div className="max-w-7xl mx-auto">
           <div className="mb-4">
-            <button className="text-yellow-400 px-4 py-1 text-xs font-bold rounded bg-gray-700">
+            <button className="text-[#FBA919] px-4 py-1 text-xs font-bold rounded bg-gray-700">
               {data.header.subtitle}
             </button>
           </div>
@@ -131,7 +131,7 @@ const ProductAndQualitySection = () => {
             <div>
               <h2 className="mb-4 text-2xl md:text-4xl font-bold text-white">
                 {data.Qualtity.Title1}<br />
-                {data.Qualtity.Title2} <span className="text-yellow-500">{data.Qualtity.Title3}</span>
+                {data.Qualtity.Title2} <span className="text-[#FBA919] font-agressive">{data.Qualtity.Title3}</span>
               </h2>
             </div>
             <div className="space-y-6">

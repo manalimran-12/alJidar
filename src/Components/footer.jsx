@@ -34,7 +34,7 @@ const Footer = () => {
                                 placeholder={data.footer.emailPlaceholder}
                                 className="p-2 bg-[#313131] text-xs md:text-sm w-full rounded-t-lg md:rounded-l-lg md:rounded-tr-none focus:outline-none"
                             />
-                            <button className="bg-yellow-500 px-3 py-2 rounded-b-lg md:rounded-r-lg md:rounded-bl-none text-gray-900 font-semibold text-xs md:text-sm w-full md:w-1/3 mt-1 md:mt-0">
+                            <button className="bg-[#FBA919] px-3 py-2 rounded-b-lg md:rounded-r-lg md:rounded-bl-none text-gray-900 font-semibold text-xs md:text-sm w-full md:w-1/3 mt-1 md:mt-0">
                                 {data.footer.subscribeButton}
                             </button>
                         </div>
@@ -45,17 +45,17 @@ const Footer = () => {
                         <h3 className="text-sm md:text-lg font-bold text-white">Our Information</h3>
 
                         <p className="mt-2 flex items-center gap-2 text-xs md:text-base">
-                            <FaEnvelope className="text-yellow-400" /> {data.footer.contactEmail}
+                            <FaEnvelope className="text-[#FBA919]" /> {data.footer.contactEmail}
                         </p>
 
                         {data.footer.phoneNumbers.map((phone, index) => (
                             <p key={index} className="flex items-center gap-2 text-xs md:text-base">
-                                <FaPhoneAlt className="text-yellow-400" /> {phone}
+                                <FaPhoneAlt className="text-[#FBA919]" /> {phone}
                             </p>
                         ))}
 
                         <p className="flex items-center gap-2 text-xs md:text-base">
-                            <FaMapMarkerAlt className="text-yellow-400 shrink-0" /> {data.footer.address}
+                            <FaMapMarkerAlt className="text-[#FBA919] shrink-0" /> {data.footer.address}
                         </p>
                     </div>
 
@@ -64,7 +64,7 @@ const Footer = () => {
                         <h3 className="text-sm md:text-lg font-bold text-white">{data.footer.followUs}</h3>
                         <div className="flex justify-center md:justify-end gap-4 mt-2">
                             <a href="#" className="text-2xl">
-                                <FaLinkedinIn className="text-yellow-400" />
+                                <FaLinkedinIn className="text-[#FBA919]" />
                             </a>
                         </div>
                     </div>

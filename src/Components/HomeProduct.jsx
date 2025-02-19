@@ -15,7 +15,7 @@ const ProductDetails = ({ product }) => {
         </div>
 
         <div className="text-left w-full p-16">
-          <button className="bg-[#323232] text-yellow-500 px-4 py-1 text-sm font-bold rounded">
+          <button className="bg-[#323232] text-[#FBA919] px-4 py-1 text-sm font-bold rounded">
             {product.category}
           </button>
 

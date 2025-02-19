@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         urbanist: ["var(--font-urbanist)", "sans-serif"],  
-        aggressive: ["Aggressive", "sans-serif"],
+        agressive: ["Agressive", "sans-serif"],
       },
       colors: {
         background: "var(--background)",

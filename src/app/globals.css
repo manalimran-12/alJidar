@@ -14,6 +14,13 @@
     --foreground: #ededed;
   }
 }
+@font-face {
+  font-family: "Agressive";
+  src: url("../public/font/AGRESSIVE.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 body {
   color: var(--foreground);
@@ -33,7 +40,7 @@ body {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #facc15; /* Tailwind yellow-500 */
+  background-color: #facc15; /* Tailwind [#FBA919] */
   border-radius: 4px;
 }
 

@@ -5,7 +5,7 @@ import data from "../public/data.js";
 
 export default function TrustSection() {
   return (
-    <section className="flex flex-col md:flex-row items-stretch bg-yellow-500 text-white">
+    <section className="flex flex-col md:flex-row items-stretch bg-[#FBA919] text-white">
       <div className="w-full md:w-1/4 md:h-auto">
         <Image
           src={trust1}
@@ -23,7 +23,7 @@ export default function TrustSection() {
         </h2>
         <button className="absolute bottom-6 right-6 bg-white rounded-full p-3 hover:bg-opacity-90 transition-all group shadow-lg">
           <svg
-            className="w-5 h-5 transform rotate-[315deg] text-yellow-500 transition-transform duration-300 group-hover:rotate-90"
+            className="w-5 h-5 transform rotate-[315deg] text-[#FBA919] transition-transform duration-300 group-hover:rotate-90"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

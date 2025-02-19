@@ -20,7 +20,7 @@ const QualitySectionProp = ({ heading, sections, bgColor, hover, isProductPage =
             <div className="relative max-w-7xl mx-auto z-10 text-left">
                 {heading && (
                     <h2
-                        className="text-2xl md:text-4xl font-bold tracking-wide leading-tight mb-8"
+                        className=" text-2xl md:text-4xl font-bold tracking-wide leading-tight mb-8"
                         dangerouslySetInnerHTML={{ __html: heading.title }}
                     ></h2>
                 )}
@@ -42,8 +42,8 @@ const QualitySectionProp = ({ heading, sections, bgColor, hover, isProductPage =
                         }}
                     >
                         <h3
-                            className={`text-lg md:text-xl font-bold tracking-wide transition-colors duration-300 ${hoveredSection === section.id
-                                ? "text-yellow-500"
+                            className={`font-agressive text-lg md:text-xl font-bold tracking-wide transition-colors duration-300 ${hoveredSection === section.id
+                                ? "text-[#FBA919]"
                                 : "text-white"
                                 }`}
                         >
@@ -56,7 +56,7 @@ const QualitySectionProp = ({ heading, sections, bgColor, hover, isProductPage =
 
             {/* Orange Shape Overlay - Adjusted for Responsiveness */}
             <div
-                className="absolute bottom-0 right-0 w-full h-28 md:h-40 bg-yellow-500"
+                className="absolute bottom-0 right-0 w-full h-28 md:h-40 bg-[#FBA919]"
                 style={{
                     clipPath: "polygon(100% 0%, 100% 100%, 50% 100%)",
                     zIndex: 1,

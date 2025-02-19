@@ -1,6 +1,7 @@
 import "./globals.css";
-import { Urbanist } from "next/font/google";
-const redHat = Urbanist({ subsets: ["latin"] });
+import { Urbanist, Instrument_Serif } from "next/font/google";
+const urbanist = Urbanist({ subsets: ["latin"] });
+const instrumentSerif = Instrument_Serif({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata = {
   title: "Al-Jidar",
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body
-        className={`${redHat.className} text-secondary font-medium bg-white`}>
+        className={`${urbanist.className} text-secondary font-medium bg-white`}>
         {children}
       </body>
     </html>
