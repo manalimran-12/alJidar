@@ -19,16 +19,18 @@ const ProductCard = ({ title, description, image, isLarge = false, yellowBg = fa
 
   return (
     <div
-      className={`relative overflow-hidden bg-white hover:bg-yellow-500 group transition-all duration-300 
+      className={`relative overflow-hidden bg-white hover:bg-yellow-500 group transition-all duration-300   
         ${isLarge ? 'col-span-2' : 'col-span-1'} h-[280px]`}
     >
       <div className="p-8 h-full flex flex-col justify-between relative">
         <div>
-          <h3 className={`font-bold mb-2 text-yellow-500 group-hover:text-black 
-           ${isLarge ? 'text-3xl' : 'text-2xl'}`}>
+          <h3 className={`  font-aggressive font-bold mb-2 text-yellow-500 group-hover:text-black 
+            ${isLarge ? 'text-xl sm:text-2xl md:text-3xl' : 'text-lg sm:text-xl md:text-2xl'}`}>
             {title}
           </h3>
-          <p className="text-sm max-w-[50%] leading-relaxed text-black">{description}</p>
+        
+
+          <p className="text-xs  sm:text-sm max-w-[50%] leading-relaxed text-black">{description}</p>
         </div>
 
         {/* Dynamic Button */}
@@ -52,7 +54,7 @@ const ProductCard = ({ title, description, image, isLarge = false, yellowBg = fa
             </svg>
           </button>
         </div>
-        
+
         <div className="absolute right-0 top-1/2 transform -translate-y-1/2 lg:w-[60%] lg:h-[300px] w-[50%] h-[200px] xl:w-[60%] xl:h-[300px]">
           <Image
             src={image}

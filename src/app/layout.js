@@ -1,6 +1,6 @@
 import "./globals.css";
-import { Red_Hat_Display } from "next/font/google";
-const redHat = Red_Hat_Display({ subsets: ["latin"] });
+import { Urbanist } from "next/font/google";
+const redHat = Urbanist({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Al-Jidar",

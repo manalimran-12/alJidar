@@ -14,7 +14,7 @@ const ProductDetails = ({ product }) => {
           <Image src={iso} alt={product.title} width={805} height={702} className="w-full h-auto object-contain object-left" />
         </div>
 
-        <div className="text-left w-full p-10">
+        <div className="text-left w-full p-16">
           <button className="bg-[#323232] text-yellow-500 px-4 py-1 text-sm font-bold rounded">
             {product.category}
           </button>

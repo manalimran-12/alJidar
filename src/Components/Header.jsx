@@ -7,7 +7,7 @@ import logo from "../public/logo.png";
 import homeBackground from "../public/home1.png";
 import { useRouter } from "next/navigation";
 
-export default function HeaderSection() {
+export default function   HeaderSection() {
   const router = useRouter();
 
   return (
@@ -63,7 +63,7 @@ export default function HeaderSection() {
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-3 md:mt-4">
             {data.header.mainHeading1}
           </h1>
-          <h1 className="text-yellow-500 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-2">
+          <h1 className="font-AGRESSIVE  text-yellow-500 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-2 ">
             {data.header.headerName}
           </h1>
 
