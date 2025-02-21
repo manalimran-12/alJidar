@@ -7,7 +7,7 @@ import logo from "../public/logo.png";
 import homeBackground from "../public/home1.png";
 import { useRouter } from "next/navigation";
 
-export default function HeaderProp({ text, subtitle, className, scrollToId }) {
+export default function HeaderProp({ text, subtitle, className, scrollToId}) {
     const router = useRouter();
     const handleClick = () => {
         document.getElementById(scrollToId)?.scrollIntoView({ behavior: "smooth" });
@@ -30,9 +30,9 @@ export default function HeaderProp({ text, subtitle, className, scrollToId }) {
                     <Image
                         src={logo}
                         alt="Logo"
-                        width={300}
-                        height={150}
-                        className="cursor-pointer w-45 md:w-36"
+                        width={150}
+                        height={50}
+                        className="cursor-pointer w-24 md:w-36"
                         onClick={() => router.push("/home")}
                     />
 
