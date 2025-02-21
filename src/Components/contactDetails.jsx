@@ -51,7 +51,7 @@ const ContactDetails = () => {
   ];
 
   return (
-    <section className="bg-[#252525] text-white py-12 px-6 md:px-16 relative">
+    <section id="contactdetails" className="bg-[#252525] text-white py-12 px-6 md:px-16 relative">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-left relative z-10">
         {sections.map((section) => (
           <div

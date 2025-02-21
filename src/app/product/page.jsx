@@ -17,7 +17,7 @@ export default function Product() {
 
     return (
         <div className="bg-black text-white min-h-screen">
-            <HeaderProp text={data.Contact.mainHeading2} subtitle={data.Contact.subtitle2} className={"right-1/4 bottom-15"} />
+            <HeaderProp text={data.Contact.mainHeading2} subtitle={data.Contact.subtitle2} className={"right-1/4 bottom-15"} scrollToId="studProduct"/>
             <StudProduct product={data.product1} image={studProduct}reverse={false} />
             <StudProduct product={data.product2} image={FurringProduct} reverse={true} />
             <StudProduct product={data.product3} image={channel} reverse={false}/>

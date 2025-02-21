@@ -5,10 +5,12 @@ import Image from "next/image";
 import QualityBackground from "../public/bgQuality.png"; // Ensure correct path
 
 const QualitySectionProp = ({ heading, sections, bgColor, hover, isProductPage = false }) => {
-    const [hoveredSection, setHoveredSection] = useState("quality");
+    const centerIndex = Math.floor(sections.length / 2);
+    const [hoveredSection, setHoveredSection] = useState(sections[centerIndex]?.id || "quality");
 
     return (
         <section
+            id="studProduct"
             className={`relative text-white py-12 px-6 md:px-16 bg-no-repeat bg-cover`}
             style={{
                 backgroundImage: `url(${QualityBackground.src})`,
@@ -32,7 +34,7 @@ const QualitySectionProp = ({ heading, sections, bgColor, hover, isProductPage =
                     <div
                         key={section.id}
                         onMouseEnter={() => setHoveredSection(section.id)}
-                        onMouseLeave={() => setHoveredSection("quality")}
+                        onMouseLeave={() => setHoveredSection(sections[centerIndex]?.id || "quality")}
                         className={`transition-all duration-300 px-6 py-6 rounded-lg cursor-pointer transform ${hoveredSection === section.id
                             ? "shadow-xl scale-105 bg-opacity-80"
                             : "bg-[#252525] scale-100"
