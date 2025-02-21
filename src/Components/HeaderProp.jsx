@@ -55,7 +55,7 @@ export default function HeaderProp({ text, subtitle, className }) {
                         {subtitle}
                     </button>
                     <h1
-                        className="text-4xl md:text-6xl font-bold mt-4 text-left"
+                        className="text-4xl md:text-6xl font-bold mt-4 text-left sm:text-sm"
                         dangerouslySetInnerHTML={{ __html: text }}
                     ></h1>
                 </div>
