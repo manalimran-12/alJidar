@@ -92,7 +92,7 @@ const data = {
     textColor: "white",
     heading: {
 
-      title: "Why FOR <span class='text-[#FBA919] font-agressive'>AL Jidar Steel<br></span> Stands Out",
+      title: "WHY FOR <span class='text-[#FBA919] font-agressive'>AL Jidar Steel<br></span> STANDS OUT",
     },
     sections: [
       {

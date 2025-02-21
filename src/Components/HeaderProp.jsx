@@ -7,8 +7,11 @@ import logo from "../public/logo.png";
 import homeBackground from "../public/home1.png";
 import { useRouter } from "next/navigation";
 
-export default function HeaderProp({ text, subtitle, className }) {
+export default function HeaderProp({ text, subtitle, className, scrollToId }) {
     const router = useRouter();
+    const handleClick = () => {
+        document.getElementById(scrollToId)?.scrollIntoView({ behavior: "smooth" });
+    };
 
     return (
         <div className="w-full bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${homeBackground.src})` }}>
@@ -27,9 +30,9 @@ export default function HeaderProp({ text, subtitle, className }) {
                     <Image
                         src={logo}
                         alt="Logo"
-                        width={150}
-                        height={50}
-                        className="cursor-pointer w-24 md:w-36"
+                        width={300}
+                        height={150}
+                        className="cursor-pointer w-45 md:w-36"
                         onClick={() => router.push("/home")}
                     />
 
@@ -55,14 +58,15 @@ export default function HeaderProp({ text, subtitle, className }) {
                         {subtitle}
                     </button>
                     <h1
-                        className="text-4xl md:text-6xl font-bold mt-4 text-left sm:text-sm"
+                        className="text-2xl sm:text-2xl md:text-4xl lg:text-4xl font-bold mt-4 text-left xl:text-4xl"
                         dangerouslySetInnerHTML={{ __html: text }}
                     ></h1>
+
                 </div>
                 <div className={`absolute bottom-4 left-1/2 transform -translate-x-1/2 sm:bottom-6 sm:right-10 sm:left-auto md:bottom-8 md:right-12 lg:bottom-24 lg:right-32 xl:right-40 sm:justify-center  ${className}`}>
                     <button
                         className="w-14 h-14 bg-gray-700 border-2 border-[#FBA919] rounded-full flex items-center justify-center text-[#FBA919] text-xl hover:bg-gray-600 transition-colors"
-                        onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+                        onClick={handleClick}
                     >
                         ↓
                     </button>

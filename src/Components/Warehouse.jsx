@@ -82,7 +82,7 @@ const WarehouseSupplySection = () => {
             PRODUCT SUPPLY
           </button>
 
-          <h2 className=" text-xl sm:text-2xl md:text-3xl mt-4">
+          <h2 className=" text-xl sm:text-2xl md:text-xl mt-4 lg:text-3xl xl:text-3xl">
             <span className="  items-center">
               {data.p.heading}
               <span className=" relative w-[170px] sm:w-[300px] h-[40px] ml-2 overflow-hidden">
