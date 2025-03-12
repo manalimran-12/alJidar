@@ -36,10 +36,7 @@ const ContactDetails = () => {
             <span className="text-[#FBA919] font-bold">Address:</span> Riyadh Industrial Estate 2, Kharj Road, Saudi Arabia
           </p>
           <p>
-            <span className="text-[#FBA919] font-bold">Phone:</span> +966 506258005
-          </p>
-          <p>
-            <span className="text-[#FBA919] font-bold">Intl.:</span> +966 506258005 / +966 551366162
+            <span className="text-[#FBA919] font-bold">Phone:</span> +966 506258005 <span className="text-[#FBA919] font-bold">Intl:</span> +966 551366162
           </p>
           <p>
             <span className="text-[#FBA919] font-bold">Email:</span> sales@aljidarsteelprofile.com
