@@ -13,7 +13,7 @@ const data = {
     headerPara:
       "Al Jidar Steel Manufacturing is a joint venture of co-founders specialized in the field of Gypsum/Drywall " +
       "accessories like Stud, Runner, C-Channel, Wall Angle, Furring Channel (Omega). Established in Riyadh, Kingdom of " +
-      "<span class='text-[#FBA919]'>Saudi Arabia in 2023</span> with a strong production capacity of ",
+      "<span class='text-[#FBA919]'>Saudi Arabia in 2023</span> with a strong production capacity.",
 
     phoneHeader: "+966 506258005",
     subtitle: "GYPSUM/DRYWALL STEEL PRODUCTS",
