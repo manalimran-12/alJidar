@@ -11,12 +11,11 @@ const data = {
   },
   header: {
     headerPara:
-      "Al Jidar Steel Manufacturing is a joint venture of three co-founders specialized in the field of Gypsum/Drywall " +
+      "Al Jidar Steel Manufacturing is a joint venture of co-founders specialized in the field of Gypsum/Drywall " +
       "accessories like Stud, Runner, C-Channel, Wall Angle, Furring Channel (Omega). Established in Riyadh, Kingdom of " +
-      "<span class='text-[#FBA919]'>Saudi Arabia in 2023</span> with a production capacity of " +
-      "<span class='text-[#FBA919]'>500 Mt. Per Month.</span>",
+      "<span class='text-[#FBA919]'>Saudi Arabia in 2023</span> with a strong production capacity of ",
 
-    phoneHeader: "+966 59 0283 005",
+    phoneHeader: "+966 506258005",
     subtitle: "GYPSUM/DRYWALL STEEL PRODUCTS",
     mainHeading1: " DEDICATED TO SHAPING THE FUTURE THROUGH",
     headerName: "AL JIDAR STEEL",
@@ -32,8 +31,8 @@ const data = {
       "Your trusted partner for premium steel solutions, built on a foundation of expertise, reliability, and exceptional service.",
     emailPlaceholder: "Your email",
     subscribeButton: "Subscribe",
-    contactEmail: "sales@aljibarsteelsolutions.com",
-    phoneNumbers: ["+966 55 1000 100", "+966 59 0283 005"],
+    contactEmail: "sales@aljidarsteelprofile.com",
+    phoneNumbers: ["+966 506258005", "+966 551366162"],
     address: "Riyadh Industrial Estate 2, Kharj Road, Saudi Arabia",
     followUs: "Follow Us",
     socialIcon: "🔗",
@@ -157,10 +156,22 @@ const data = {
     title: "Runner",
     id: "runner",
     description: "Ceiling Panel U-Trim is pre-painted in white and it is used to create the perfect professional finished edge on the new ceiling. This clever U-trim neatly slots on around the entire ceiling to create a stunning flawless look.",
-    availability: "FSP Furring Channel is a hat-shaped corrosion -  resistant framing component used to fur out masonry walls and ceiling assemblies. In concrete wall applications, furring channel is installed vertically to the wall surface using concrete nails or power-driven fasteners.",
+    availability: "Stud are available in 0.35 mm – 0.90 mm and upon request other thickness will be provided.",
     specifications: {
       headers: ["Thickness (mm)", "Width (mm)", "Length (mm)", "Flang (mm)", "Package (pcs)"],
       values: ["0.35, 0.40, 0.45", "9.46.50.61.68.70.73.90.98.123.148", "3000", "34 and 36", "250/pallet"]
+    }
+  },
+
+  product5: {
+    category: "GYPSUM/DRYWALL STEEL PRODUCTS",
+    title: "Wall Angle",
+    id: "wall-angle",
+    description: "It is also known as Carrying Channel or C Channel and is used for ceiling framework. Main Channel is a prominent channel in a conventional metal framework and it is produced from cold rollformed steel.Main channel is the supporting component for the furring channel as it hangs from the roof with furring channel right beneath it.",
+    availability: " Stud are available in 0.35 mm – 0.90 mm and upon request other thickness will be provided.",
+    specifications: {
+      headers: ["Thickness (mm)", "Width (mm)", "Length (mm)", "Flang (mm)", "Package (pcs)"],
+      values: ["0.35, 0.40, 0.45", "39,46,50,61,68,70,73,90,98,123,148", "3000", "34 and 36", "250/pallet"]
     }
   },
 
